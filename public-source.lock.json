@@ -5,7 +5,7 @@
     ".gitattributes": "7c5aee881f68589a7341b3dff93b62c47384a4992336db14aab081831dd7dd3e",
     ".github/workflows/pages.yml": "9a91545e45ee921d6e97512348934cb9325066e15c67ae50455357c70b38befc",
     ".gitignore": "3ecb96d41ced7437b0171e5a26a5d11eae2013fac487f580f3eacc0f8bc27d7b",
-    "README.md": "8ac6b51381ed994bd070517ecfec4407425e7cfb30731b9dd31c94f3c9c5a99b",
+    "README.md": "d5373904fb4c2a049242c1858792b000ecb2882527818f21442357bdd787e412",
     "config/academic_zh_lqa_revision_2026-11-24.json": "5ed9f92b10b7737d37cd1dc37d2b576c5c0e9ef21cf00c867c7895f8faba8fc2",
     "config/annotation_prompt.md": "cd3cc4174f7cade6e4bc60395273e66b98c0d41f4072867eff0c95270fddba2c",
     "config/public_release.json": "6a16ce2dcf48f5139529fdb6ffb3efe695cccb2dd173c283a9b153d864e5c188",

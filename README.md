@@ -2,6 +2,14 @@
 
 A bilingual English / Traditional Chinese research explorer for 500 authentic English–Chinese–Hungarian triples. The original annotated corpus remains read-only: **50 human-reviewed records, 450 AI-only annotations**. English is a reference pivot, not necessarily the historical original; a Tatoeba community link does not guarantee equivalence.
 
+## Start Here / Assessment Essentials
+
+1. [Live Website](https://saroltayulinwang.github.io/trilingual-consistency-explorer/)
+2. [Learning Report](https://saroltayulinwang.github.io/trilingual-consistency-explorer/#report)
+3. [Codebook](https://saroltayulinwang.github.io/trilingual-consistency-explorer/#codebook)
+4. [Dataset — 500 annotated records (CSV)](https://github.com/SaroltaYulinWang/trilingual-consistency-explorer/blob/main/data/processed/trilingual_500_annotated.csv)
+5. [AI Use Declaration](https://saroltayulinwang.github.io/trilingual-consistency-explorer/#about)
+
 ## Build and run
 
 Node22+ and Python3.9+; no production packages, API keys or annotation provider required.
