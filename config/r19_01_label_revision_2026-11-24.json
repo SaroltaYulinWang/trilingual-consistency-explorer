@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "revision_id": "approved-r19-01-language-label-2026-11-24",
+  "recorded_date": "2026-11-24",
+  "authorization": "Explicit researcher authorization: only the English and Traditional Chinese fullCodebook download labels gain an English-language qualifier. No destination, academic text, corpus or classification change.",
+  "predecessor_publication_manifest": {
+    "path": "reports/final_bilingual_publication_manifest.json",
+    "sha256": "25bdc434956336b35cc8b456f30a70db8dc819eb051187fecdb8267018dec7d1"
+  },
+  "file": "web/app.js",
+  "previous_sha256": "75e7ce7c025edd82e772d3240234fd728a1377db133fcc3ae00bfcbab56e358a",
+  "current_sha256": "749293e31a7cb08af3ed4e00d4bc184cb127f605d1ed5cc68cff2bd815058795",
+  "changes": [
+    {
+      "language": "en",
+      "key": "fullCodebook",
+      "before": "fullCodebook:'Read full research codebook'",
+      "after": "fullCodebook:'Read full research codebook (English)'"
+    },
+    {
+      "language": "zh",
+      "key": "fullCodebook",
+      "before": "fullCodebook:'閱讀完整研究代碼本'",
+      "after": "fullCodebook:'閱讀完整研究代碼本（英文）'"
+    }
+  ]
+}

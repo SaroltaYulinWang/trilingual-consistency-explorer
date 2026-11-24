@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "codebook_status": "APPROVED",
+  "codebook_version": "v0.2-approved",
+  "record_counts": {
+    "total": 500,
+    "human_reviewed": 50,
+    "ai_only": 450
+  },
+  "approved_research_sha256": {
+    "data/processed/trilingual_500_annotated.csv": "1cd7d092e0fb16f3055d361316799450d1b058f13b342cd51a2b23910c10ed07",
+    "web/data/corpus.json": "686ff4a9bed0ddda1730da8e91b911900b82d3e0fe386b790b352588069fc42b",
+    "web/content.js": "a9e80d4634ac43e3961289e4a070cef0e235af8ae30f57524474cf75e2bdb813",
+    "reports/codebook_v0.2_publication.md": "94f9d845754271edc6028b23c98910a5f8b5c4b96f63c69d431c0daa4010643e",
+    "reports/codebook_v0.2_public_summary.md": "d57dc01b84c2f1785229e5ef4c1eceb1ac0aa67c3fa813b7e77aae436e961f80",
+    "reports/codebook_revision_log_v0.2.md": "ca90853492b5266962454638335988172807aba37392b6a86ccb111f7ca56186",
+    "reports/website_display_mapping.md": "5d72f5c74ceaffffea56a14555ec23ea6501bad039296c37616bc1ad7a0d881f",
+    "reports/final_annotation_validation.json": "94ef7ce538e14f3d1619fa797eb26143f580c5c04ca0301c634d375d73aa6101"
+  },
+  "scope_note": "Deterministic public projection of saved framework approval and unchanged public research files; not independent linguistic validation or new annotation approval."
+}

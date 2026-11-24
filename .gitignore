@@ -1,0 +1,13 @@
+dist/
+node_modules/
+.DS_Store
+__pycache__/
+*.py[cod]
+*.xlsx
+*.xls
+.env*
+reviews/
+data/annotations/
+config/researcher_approval.json
+reports/history/
+*.zip

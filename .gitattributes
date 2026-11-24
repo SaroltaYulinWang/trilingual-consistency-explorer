@@ -1,0 +1,2 @@
+# Preserve approved data bytes and source-lock hashes across Git checkouts.
+* -text

@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "run_id": "approved_50human_450ai_pass01",
+  "n_records": 500,
+  "unique_ids": 500,
+  "human_reviewed": 50,
+  "original_pilot": 30,
+  "supplemental_human": 20,
+  "ai_only": 450,
+  "human_checked_counts": {
+    "yes": 50,
+    "no": 450
+  },
+  "category_counts": {
+    "Acceptable Variation": 65,
+    "Core Meaning Preserved": 380,
+    "Potential Accuracy Issue": 32,
+    "Indeterminate": 16,
+    "Divergent Interpretations": 7
+  },
+  "category_counts_by_origin": {
+    "pilot30": {
+      "Acceptable Variation": 5,
+      "Potential Accuracy Issue": 1,
+      "Core Meaning Preserved": 20,
+      "Divergent Interpretations": 1,
+      "Indeterminate": 3
+    },
+    "supplemental20": {
+      "Core Meaning Preserved": 13,
+      "Acceptable Variation": 6,
+      "Indeterminate": 1
+    },
+    "ai_only": {
+      "Core Meaning Preserved": 347,
+      "Potential Accuracy Issue": 31,
+      "Indeterminate": 12,
+      "Acceptable Variation": 54,
+      "Divergent Interpretations": 6
+    }
+  },
+  "unclassified": 0,
+  "original_fields_unchanged": [
+    "source_text",
+    "target_text",
+    "hungarian_text",
+    "eng_id",
+    "cmn_id",
+    "hun_id",
+    "source",
+    "unit",
+    "direct_cmn_hun_link"
+  ],
+  "required_course_fields": [
+    "category",
+    "cmn_id",
+    "direct_cmn_hun_link",
+    "eng_id",
+    "human_checked",
+    "hun_id",
+    "hungarian_text",
+    "record_id",
+    "review_notes",
+    "source",
+    "source_text",
+    "target_text",
+    "unit"
+  ],
+  "preserved_human_judgments_and_notes": 50,
+  "dry_run": {
+    "status": "passed",
+    "n": 20,
+    "seed": 2041,
+    "record_ids": [
+      "TCE-0025",
+      "TCE-0045",
+      "TCE-0066",
+      "TCE-0073",
+      "TCE-0076",
+      "TCE-0136",
+      "TCE-0139",
+      "TCE-0143",
+      "TCE-0166",
+      "TCE-0171",
+      "TCE-0179",
+      "TCE-0219",
+      "TCE-0227",
+      "TCE-0254",
+      "TCE-0261",
+      "TCE-0321",
+      "TCE-0330",
+      "TCE-0333",
+      "TCE-0393",
+      "TCE-0464"
+    ],
+    "remaining_inference_allowed": true,
+    "limits": "Schema, evidence spans, IDs and decision-route validation; not independent human validation."
+  },
+  "native_model_output_records_verified": 450,
+  "raw_export_checks": {
+    "eng_sentences.tsv.bz2": {
+      "matched_distinct_ids": 500,
+      "sha256": "0c4d3b18152bd6507bbf77ab690532b25de1e60da950f68705b3c88935c01fb4"
+    },
+    "cmn_sentences.tsv.bz2": {
+      "matched_distinct_ids": 497,
+      "sha256": "b244a94d91a950e1ea387cface948f4aadc89346600bf67033cb0062d0e3c07f"
+    },
+    "hun_sentences.tsv.bz2": {
+      "matched_distinct_ids": 498,
+      "sha256": "8df95cba42e37b3f9853d72f091d02e57fce699a76c5b49de4e917836d1b2f00"
+    },
+    "eng-cmn_links.tsv.bz2": {
+      "matched_required_edges": 500,
+      "sha256": "cd55804a8a25a1f0c459ca9377851b17ff94e8aab02a194a8447822a41b2cd77"
+    },
+    "eng-hun_links.tsv.bz2": {
+      "matched_required_edges": 500,
+      "sha256": "720bf8b5ddce0f91292324b3eae479e303ab3542cca8e0c55fa1523ba7e6bd08"
+    }
+  },
+  "inference": {
+    "provider": "OpenAI via authenticated Codex CLI",
+    "model": "gpt-6.1-sol",
+    "settings": {
+      "reasoning_effort": "medium",
+      "transport": "codex_cli",
+      "sandbox": "read-only",
+      "output_schema": "annotation_batch_v0.2"
+    }
+  },
+  "approval_evidence": "Project chat: user message beginning I have reviewed the Codebook v0.2 final candidate, explicitly approving framework, D1–D5, protocol, five outcomes, recovery policy and execution after a validated 20-record dry run.",
+  "input_sha256": {
+    "corpus": "9bf80181b92dc8685edab27f9fa227a560495084768e0a63d87fcf6260990d3d",
+    "pilot": "729bdd183dc677edc1f4e2ff9bc8ea9c0966ae17447318d113eec87abc07a083",
+    "pilot_review": "31c545c9835a1f321c2711f07ce822bec5cafa96e671e697d1b065194503ca19",
+    "supplemental_sample": "e5028c8a38fa7f72df845300cc1a927aff17a4fdafcbbf6c4de8f603fc214913",
+    "supplemental_review": "c06e4697426e15e0727cbce8863e665f17b6604f7f4eb21c2725474f9e90e9e1",
+    "codebook": "10257b804cf098d0b1717820ae49bc075276f3ba1ee11effa43d5f1d65e4da6b",
+    "protocol": "08947061251d5cf558e2ab304d045fd71aefce2fe3ca17070fad4b40fb693d29",
+    "prompt": "cd3cc4174f7cade6e4bc60395273e66b98c0d41f4072867eff0c95270fddba2c",
+    "response_schema": "9f3d3ef90435d15f87a05d94dedc70fdd0dff7500115d94b1c38e346083a93e4",
+    "pipeline": "cd82cef7731307d972b1c78d15957965ab8d8caec28abb603da08fc1e2f70cac"
+  },
+  "final_csv": "data/processed/trilingual_500_annotated.csv",
+  "final_csv_sha256": "1cd7d092e0fb16f3055d361316799450d1b058f13b342cd51a2b23910c10ed07",
+  "limitations": [
+    "AI-only labels are not independent human ground truth.",
+    "Model identity is the explicit CLI --model selection; native events do not expose a returned model revision.",
+    "Supplemental sample CSV regenerated from the workbook sampling record; exact IDs verified against seed 2040.",
+    "Blank reviewer/date/version cells in human sources are retained, not invented.",
+    "Human pairwise statuses retain the original workbook vocabulary; no unapproved normalization is imposed.",
+    "Schema, span and routing validation does not establish linguistic truth or inter-annotator agreement."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "revision_id": "approved-academic-zh-lqa-2026-11-24",
+  "recorded_date": "2026-11-24",
+  "authorization": "Explicit researcher approval of Task18 A1–A6: Chinese academic translation only; English content, rules, data and historical approvals unchanged.",
+  "academic_freeze_manifest_sha256": "e46f66b780867a4ac945c2e0667c455487f3505b956b0f4a4963288461e9a49a",
+  "files": {
+    "web/content.js": {
+      "previous_sha256": "7839a673810af4e87dd163ecbf9796abf9c14f9a1f1555efe6f3d0fb4a17a9bf",
+      "current_sha256": "06acee09268d773043a15c3853d44b791ccd4c414e3825c64491aaebcd34af6b",
+      "changes": [
+        {
+          "item": "A1",
+          "language": "zh",
+          "key": "Indeterminate.positive.explanation.zh",
+          "before": "    positive: { id: 'TCE-0484', explanation: bi('Departure is identifiable in Chinese, but the available text does not establish incompatible Hungarian selection or an unsupported Chinese commitment. Material uncertainty is preserved.', '中文的離去義可以辨認，但現有文本未能證明匈牙利語選取不相容的讀法，或中文作出未獲支持的承諾，因此保留關鍵不確定性。') },",
+          "after": "    positive: { id: 'TCE-0484', explanation: bi('Departure is identifiable in Chinese, but the available text does not establish incompatible Hungarian selection or an unsupported Chinese commitment. Material uncertainty is preserved.', '中文的『離去』義可以辨認，但現有文本既未能證明匈牙利語選取了不相容的讀法，也未能證明中文選取的『離去』讀法缺乏英語參照句的支持。因此，仍須保留這項關鍵不確定性。') },"
+        },
+        {
+          "item": "A2",
+          "language": "zh",
+          "key": "learningSections.method.paragraphs.zh[6]",
+          "before": "        \"v0.1 至 v0.2 的修訂紀錄列明了多項操作規則的變更及原因。我將較寬鬆的「變化是否值得記錄」準則，改為要求有證據支持的非例行變化，以避免把普通對應過度標記為變化。「不同讀法分流」（Divergent Interpretations）現要求兩個譯文實際選取不同、且獲英語支持的讀法；源句本身有歧義並不足夠。「準確性疑點」（Potential Accuracy Issue）要求確切的文字觸發點及合理的內容後果，而非僅僅偏好另一種措辭。「無法判定」（Indeterminate）要求存在尚未解決的關鍵問題。我亦將拼寫及形式觀察與語義類別分開，記錄適用範圍嚴格且有依據的文字恢復政策，並明訂 D1–D5 的判定優先順序。完整修訂歷史保留在連結所指向的 Codebook 修訂紀錄中。\",",
+          "after": "        \"v0.1 至 v0.2 的修訂紀錄列明了多項操作規則的變更及原因。我將較寬鬆的「變化是否值得記錄」準則，改為要求有證據支持的非例行變化，以避免把普通對應過度標記為變化。「解釋分歧」（Divergent Interpretations）現要求兩個譯文實際選取不同、且獲英語支持的讀法；源句本身有歧義並不足夠。「準確性疑點」（Potential Accuracy Issue）要求確切的文字觸發點及合理的內容後果，而非僅僅偏好另一種措辭。「無法判定」（Indeterminate）要求存在尚未解決的關鍵問題。我亦將拼寫及形式觀察與語義類別分開，記錄適用範圍嚴格且有依據的文字恢復政策，並明訂 D1–D5 的判定優先順序。完整修訂歷史保留在連結所指向的 Codebook 修訂紀錄中。\","
+        },
+        {
+          "item": "A3",
+          "language": "zh",
+          "key": "Core Meaning Preserved.rule.zh",
+          "before": "    rule: bi('Check participants, event relations, negation, scope, modality and relevant temporal relations in both pairs. Do not infer disagreement from ordinary morphology, word order, subject omission or different literal idiom imagery.', '分別檢查兩組的人物、事件關係、否定、範圍、情態及相關時間關係。不可僅憑詞形、詞序、主語省略或習語的字面意象不同，便推斷意義不一致。'),",
+          "after": "    rule: bi('Check participants, event relations, negation, scope, modality and relevant temporal relations in both pairs. Do not infer disagreement from ordinary morphology, word order, subject omission or different literal idiom imagery.', '分別檢查兩組的參與實體、事件關係、否定、範圍、情態及相關時間關係。不可僅憑詞形、詞序、主語省略或習語的字面意象不同，便推斷意義不一致。'),"
+        },
+        {
+          "item": "A4",
+          "language": "zh",
+          "key": "Potential Accuracy Issue.rule.zh",
+          "before": "    rule: bi('Quote the trigger, identify the affected pair and possible content consequence, and consider benign alternatives. Unfamiliar wording, a preferred alternative, source ambiguity or a typo alone is not enough.', '引用具體片段，指出受影響的語言對及可能的內容後果，並考慮合理的替代解釋。用語陌生、另有偏好的譯法、源句多義或單純錯字均不足夠。'),",
+          "after": "    rule: bi('Quote the trigger, identify the affected pair and possible content consequence, and consider benign alternatives. Unfamiliar wording, a preferred alternative, source ambiguity or a typo alone is not enough.', '引用具體片段，指出受影響的語言對及可能的內容後果，並考慮合理的替代解釋。用語陌生、另有偏好的譯法、源句歧義或單純錯字均不足夠。'),"
+        },
+        {
+          "item": "A5",
+          "language": "zh",
+          "key": "learningSections.analysis.paragraphs.zh[20]",
+          "before": "        \"get 顯示這個區分的重要性。英語子串搜尋返回九條記錄，包括 getting 及 forget；完整詞形 get 則出現於七條。比較 TCE-0147 與 TCE-0373——“I get what you're saying.”／“我理解你说的话。”／“Értem, mit mondasz.”—可看到明確的命題補語如何支持理解義，而 get it 讓詞義保持開放。\",",
+          "after": "        \"get 顯示這個區分的重要性。英語子串搜尋返回九條記錄，包括 getting 及 forget；完整詞項（token）get 則出現於七條記錄。比較 TCE-0147 與 TCE-0373——“I get what you're saying.”／“我理解你说的话。”／“Értem, mit mondasz.”—可看到明確的命題補語如何支持理解義，而 get it 讓詞義保持開放。\","
+        },
+        {
+          "item": "A5",
+          "language": "zh",
+          "key": "methodNotes.zh[3]",
+          "before": "  'KWIC 逐次展示命中片段、原文左右語境及連結的三語句子證據。此檢視採字面子串比對，另行執行的離線英語詞頻分析才按完整詞形計數。出現次數與不同記錄數分開計算。語境排序比較 Unicode 字元，不作中文斷詞或跨語言詞對齊。',",
+          "after": "  'KWIC 逐次展示命中片段、原文左右語境及連結的三語句子證據。此檢視採字面子串比對，另行執行的離線英語詞頻分析才按完整詞項（token）作完全匹配計數。出現次數與不同記錄數分開計算。語境排序比較 Unicode 字元，不作中文斷詞或跨語言詞對齊。',"
+        },
+        {
+          "item": "A6",
+          "language": "zh",
+          "key": "methodNotes.zh[2]",
+          "before": "  '熱圖每格按記錄的現象計算不同 record_id，同一現象每條只計一次。多標籤可令合計超過記錄數；缺少記錄不代表沒有語言問題，必須明確顯示。',",
+          "after": "  '熱圖每格按記錄的現象計算不同 record_id，同一現象每條只計一次。多標籤可令合計超過記錄數；未有輔助標籤記錄不代表沒有語言問題；這種記錄狀態亦會明確顯示。',"
+        }
+      ]
+    },
+    "web/app.js": {
+      "previous_sha256": "482c682113cb5a668dfbe8d7a404bba2c355a6b53dbedbd777d59c996e085e47",
+      "current_sha256": "75e7ce7c025edd82e772d3240234fd728a1377db133fcc3ae00bfcbab56e358a",
+      "changes": [
+        {
+          "item": "A2",
+          "language": "zh",
+          "key": "copy.zh.d3",
+          "before": "  approvalNote:'目前狀態：研究者已於 2026 年 11 月 22 日批准框架、D1–D5、協議及錯字恢復政策。歷史文件保留早前待批建議；文末的有日期批准記錄取代較早階段。',decisionTitle:'已批准的判定順序（D1–D5）',decisionIntro:'先分別評估並記錄 EN–ZH 及 EN–HU，再依序套用 D1–D5；只有前一步不適用時，才進入下一步。',d1:'存在具體、可追溯且可能未獲支持的內容變化，排除正常差異及獲英語支持的讀法後仍成立 → 準確性疑點。保留其他觀察與不確定性。',d2:'關鍵讀法、語言判斷、文字恢復或可接受性問題尚未解決，阻礙其餘類別的可靠判定 → 無法判定；說明所缺證據。',d3:'中文與匈牙利語實際選取英語所支持的不同實質讀法 → 不同讀法分流。僅有可能的歧義並不足夠。',d4:'兩組對應均獲支持，並有可觀察的非例行詞彙、語用、語域或視角變化，且能說明其可接受理由 → 可接受變化。',d5:'兩組對應支持相同的核心讀法與交際功能，只有正常語法、慣用表達或沒有具證據的變化 → 核心意義保留。否則 → 無法判定，並說明未滿足的條件。',bookTitle:'代碼本：如何判定個案類別',bookLead:'五個研究類別、可觀察的判定規則，以及真實邊界案例。本方案參考 MQM Accuracy，並非 MQM 官方五分類。',definition:'定義',theory:'理論依據',rule:'判定規則',positive:'正面示例',negative:'反面示例',boundary:'邊界案例',exampleQualifier:'例子用於說明已批准的編碼規則；準確性疑點不等於已證實的誤譯。',fullCodebook:'閱讀完整研究代碼本',revisions:'檢視修訂歷史',sourceExamples:'原始 Pilot 30 的真實案例',",
+          "after": "  approvalNote:'目前狀態：研究者已於 2026 年 11 月 22 日批准框架、D1–D5、協議及錯字恢復政策。歷史文件保留早前待批建議；文末的有日期批准記錄取代較早階段。',decisionTitle:'已批准的判定順序（D1–D5）',decisionIntro:'先分別評估並記錄 EN–ZH 及 EN–HU，再依序套用 D1–D5；只有前一步不適用時，才進入下一步。',d1:'存在具體、可追溯且可能未獲支持的內容變化，排除正常差異及獲英語支持的讀法後仍成立 → 準確性疑點。保留其他觀察與不確定性。',d2:'關鍵讀法、語言判斷、文字恢復或可接受性問題尚未解決，阻礙其餘類別的可靠判定 → 無法判定；說明所缺證據。',d3:'中文與匈牙利語實際選取英語所支持的不同實質讀法 → 解釋分歧。僅有可能的歧義並不足夠。',d4:'兩組對應均獲支持，並有可觀察的非例行詞彙、語用、語域或視角變化，且能說明其可接受理由 → 可接受變化。',d5:'兩組對應支持相同的核心讀法與交際功能，只有正常語法、慣用表達或沒有具證據的變化 → 核心意義保留。否則 → 無法判定，並說明未滿足的條件。',bookTitle:'代碼本：如何判定個案類別',bookLead:'五個研究類別、可觀察的判定規則，以及真實邊界案例。本方案參考 MQM Accuracy，並非 MQM 官方五分類。',definition:'定義',theory:'理論依據',rule:'判定規則',positive:'正面示例',negative:'反面示例',boundary:'邊界案例',exampleQualifier:'例子用於說明已批准的編碼規則；準確性疑點不等於已證實的誤譯。',fullCodebook:'閱讀完整研究代碼本',revisions:'檢視修訂歷史',sourceExamples:'原始 Pilot 30 的真實案例',"
+        }
+      ]
+    }
+  }
+}

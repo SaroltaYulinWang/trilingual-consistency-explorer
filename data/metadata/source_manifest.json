@@ -1,0 +1,386 @@
+{
+  "project": "When Translations Disagree: A Trilingual Corpus Explorer for Semantic Consistency Auditing",
+  "generated_utc": "2026-11-22T09:21:32.160820+00:00",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "downloads": {
+    "eng_sentences.tsv.bz2": {
+      "url": "https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences.tsv.bz2",
+      "final_url": "https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences.tsv.bz2",
+      "retrieval_started_utc": "2026-11-22T09:20:21.088473+00:00",
+      "retrieval_completed_utc": "2026-11-22T09:20:46.025634+00:00",
+      "server_last_modified": "Sat, 21 Nov 2026 06:31:36 GMT",
+      "etag": "\"6b013ac8-17cc616\"",
+      "bytes": 24954390,
+      "sha256": "0c4d3b18152bd6507bbf77ab690532b25de1e60da950f68705b3c88935c01fb4",
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sun, 22 Nov 2026 09:19:54 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "24954390",
+        "Last-Modified": "Sat, 21 Nov 2026 06:31:36 GMT",
+        "Connection": "close",
+        "ETag": "\"6b013ac8-17cc616\"",
+        "Strict-Transport-Security": "max-age=15768000; includeSubdomains",
+        "X-Frame-Options": "Deny",
+        "X-Content-Type-Options": "nosniff",
+        "Accept-Ranges": "bytes"
+      },
+      "integrity": "Content-Length when supplied; complete bzip2 CRC; local SHA-256"
+    },
+    "cmn_sentences.tsv.bz2": {
+      "url": "https://downloads.tatoeba.org/exports/per_language/cmn/cmn_sentences.tsv.bz2",
+      "final_url": "https://downloads.tatoeba.org/exports/per_language/cmn/cmn_sentences.tsv.bz2",
+      "retrieval_started_utc": "2026-11-22T09:20:46.037820+00:00",
+      "retrieval_completed_utc": "2026-11-22T09:20:49.331041+00:00",
+      "server_last_modified": "Sat, 21 Nov 2026 06:31:36 GMT",
+      "etag": "\"6b013ac8-133c5f\"",
+      "bytes": 1260639,
+      "sha256": "b244a94d91a950e1ea387cface948f4aadc89346600bf67033cb0062d0e3c07f",
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sun, 22 Nov 2026 09:20:18 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "1260639",
+        "Last-Modified": "Sat, 21 Nov 2026 06:31:36 GMT",
+        "Connection": "close",
+        "ETag": "\"6b013ac8-133c5f\"",
+        "Strict-Transport-Security": "max-age=15768000; includeSubdomains",
+        "X-Frame-Options": "Deny",
+        "X-Content-Type-Options": "nosniff",
+        "Accept-Ranges": "bytes"
+      },
+      "integrity": "Content-Length when supplied; complete bzip2 CRC; local SHA-256"
+    },
+    "hun_sentences.tsv.bz2": {
+      "url": "https://downloads.tatoeba.org/exports/per_language/hun/hun_sentences.tsv.bz2",
+      "final_url": "https://downloads.tatoeba.org/exports/per_language/hun/hun_sentences.tsv.bz2",
+      "retrieval_started_utc": "2026-11-22T09:20:49.332677+00:00",
+      "retrieval_completed_utc": "2026-11-22T09:20:56.808575+00:00",
+      "server_last_modified": "Sat, 21 Nov 2026 06:31:36 GMT",
+      "etag": "\"6b013ac8-5bdb6e\"",
+      "bytes": 6019950,
+      "sha256": "8df95cba42e37b3f9853d72f091d02e57fce699a76c5b49de4e917836d1b2f00",
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sun, 22 Nov 2026 09:20:22 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "6019950",
+        "Last-Modified": "Sat, 21 Nov 2026 06:31:36 GMT",
+        "Connection": "close",
+        "ETag": "\"6b013ac8-5bdb6e\"",
+        "Strict-Transport-Security": "max-age=15768000; includeSubdomains",
+        "X-Frame-Options": "Deny",
+        "X-Content-Type-Options": "nosniff",
+        "Accept-Ranges": "bytes"
+      },
+      "integrity": "Content-Length when supplied; complete bzip2 CRC; local SHA-256"
+    },
+    "eng-cmn_links.tsv.bz2": {
+      "url": "https://downloads.tatoeba.org/exports/per_language/eng/eng-cmn_links.tsv.bz2",
+      "final_url": "https://downloads.tatoeba.org/exports/per_language/eng/eng-cmn_links.tsv.bz2",
+      "retrieval_started_utc": "2026-11-22T09:20:56.811574+00:00",
+      "retrieval_completed_utc": "2026-11-22T09:21:00.110357+00:00",
+      "server_last_modified": "Sat, 21 Nov 2026 06:41:29 GMT",
+      "etag": "\"6b013d19-75d8f\"",
+      "bytes": 482703,
+      "sha256": "cd55804a8a25a1f0c459ca9377851b17ff94e8aab02a194a8447822a41b2cd77",
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sun, 22 Nov 2026 09:20:29 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "482703",
+        "Last-Modified": "Sat, 21 Nov 2026 06:41:29 GMT",
+        "Connection": "close",
+        "ETag": "\"6b013d19-75d8f\"",
+        "Strict-Transport-Security": "max-age=15768000; includeSubdomains",
+        "X-Frame-Options": "Deny",
+        "X-Content-Type-Options": "nosniff",
+        "Accept-Ranges": "bytes"
+      },
+      "integrity": "Content-Length when supplied; complete bzip2 CRC; local SHA-256"
+    },
+    "eng-hun_links.tsv.bz2": {
+      "url": "https://downloads.tatoeba.org/exports/per_language/eng/eng-hun_links.tsv.bz2",
+      "final_url": "https://downloads.tatoeba.org/exports/per_language/eng/eng-hun_links.tsv.bz2",
+      "retrieval_started_utc": "2026-11-22T09:21:00.111185+00:00",
+      "retrieval_completed_utc": "2026-11-22T09:21:03.309273+00:00",
+      "server_last_modified": "Sat, 21 Nov 2026 06:41:30 GMT",
+      "etag": "\"6b013d1a-11e70f\"",
+      "bytes": 1173263,
+      "sha256": "720bf8b5ddce0f91292324b3eae479e303ab3542cca8e0c55fa1523ba7e6bd08",
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sun, 22 Nov 2026 09:20:32 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "1173263",
+        "Last-Modified": "Sat, 21 Nov 2026 06:41:30 GMT",
+        "Connection": "close",
+        "ETag": "\"6b013d1a-11e70f\"",
+        "Strict-Transport-Security": "max-age=15768000; includeSubdomains",
+        "X-Frame-Options": "Deny",
+        "X-Content-Type-Options": "nosniff",
+        "Accept-Ranges": "bytes"
+      },
+      "integrity": "Content-Length when supplied; complete bzip2 CRC; local SHA-256"
+    },
+    "cmn-hun_links.tsv.bz2": {
+      "url": "https://downloads.tatoeba.org/exports/per_language/cmn/cmn-hun_links.tsv.bz2",
+      "final_url": "https://downloads.tatoeba.org/exports/per_language/cmn/cmn-hun_links.tsv.bz2",
+      "retrieval_started_utc": "2026-11-22T09:21:03.310872+00:00",
+      "retrieval_completed_utc": "2026-11-22T09:21:04.587698+00:00",
+      "server_last_modified": "Sat, 21 Nov 2026 06:41:22 GMT",
+      "etag": "\"6b013d12-ed2\"",
+      "bytes": 3794,
+      "sha256": "e4318390c028a2a45f75a4e20824cee88c8f98b08cf0ce1d07c7f8cd69092696",
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sun, 22 Nov 2026 09:20:35 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "3794",
+        "Last-Modified": "Sat, 21 Nov 2026 06:41:22 GMT",
+        "Connection": "close",
+        "ETag": "\"6b013d12-ed2\"",
+        "Strict-Transport-Security": "max-age=15768000; includeSubdomains",
+        "X-Frame-Options": "Deny",
+        "X-Content-Type-Options": "nosniff",
+        "Accept-Ranges": "bytes"
+      },
+      "integrity": "Content-Length when supplied; complete bzip2 CRC; local SHA-256"
+    }
+  },
+  "raw_validation": {
+    "eng_sentences.tsv.bz2": {
+      "excluded_wrong_column_count": 0,
+      "excluded_invalid_id": 0,
+      "excluded_duplicate_identical_sentence_id": 0,
+      "excluded_wrong_language_code": 0,
+      "excluded_blank_text": 0,
+      "raw_rows": 2041577,
+      "accepted_unique_sentences": 2041577,
+      "excluded_total_rows": 0
+    },
+    "cmn_sentences.tsv.bz2": {
+      "excluded_wrong_column_count": 0,
+      "excluded_invalid_id": 0,
+      "excluded_duplicate_identical_sentence_id": 0,
+      "excluded_wrong_language_code": 0,
+      "excluded_blank_text": 0,
+      "raw_rows": 89325,
+      "accepted_unique_sentences": 89325,
+      "excluded_total_rows": 0
+    },
+    "hun_sentences.tsv.bz2": {
+      "excluded_wrong_column_count": 0,
+      "excluded_invalid_id": 0,
+      "excluded_duplicate_identical_sentence_id": 0,
+      "excluded_wrong_language_code": 0,
+      "excluded_blank_text": 0,
+      "raw_rows": 444471,
+      "accepted_unique_sentences": 444471,
+      "excluded_total_rows": 0
+    },
+    "eng-cmn_links.tsv.bz2": {
+      "excluded_wrong_column_count": 0,
+      "excluded_invalid_id": 0,
+      "excluded_duplicate_edge": 0,
+      "excluded_missing_or_rejected_endpoint_eng": 114,
+      "excluded_missing_or_rejected_endpoint_cmn": 26,
+      "excluded_missing_or_rejected_endpoint_eng_cmn": 59,
+      "raw_rows": 78326,
+      "unique_edges_before_endpoint_filter": 78326,
+      "accepted_unique_edges": 78127,
+      "excluded_total_rows": 199
+    },
+    "eng-hun_links.tsv.bz2": {
+      "excluded_wrong_column_count": 0,
+      "excluded_invalid_id": 0,
+      "excluded_duplicate_edge": 0,
+      "excluded_missing_or_rejected_endpoint_eng": 102,
+      "excluded_missing_or_rejected_endpoint_hun": 2,
+      "excluded_missing_or_rejected_endpoint_eng_hun": 13,
+      "raw_rows": 185587,
+      "unique_edges_before_endpoint_filter": 185587,
+      "accepted_unique_edges": 185470,
+      "excluded_total_rows": 117
+    },
+    "cmn-hun_links.tsv.bz2": {
+      "excluded_wrong_column_count": 0,
+      "excluded_invalid_id": 0,
+      "excluded_duplicate_edge": 0,
+      "excluded_missing_or_rejected_endpoint_cmn": 0,
+      "excluded_missing_or_rejected_endpoint_hun": 0,
+      "excluded_missing_or_rejected_endpoint_cmn_hun": 0,
+      "raw_rows": 602,
+      "unique_edges_before_endpoint_filter": 602,
+      "accepted_unique_edges": 602,
+      "excluded_total_rows": 0
+    }
+  },
+  "counts": {
+    "distinct_eligible_english_pivot_ids": 17795,
+    "possible_distinct_triples": 29694,
+    "valid_english_sentences_without_cmn_link": 1968796,
+    "valid_english_sentences_without_hun_link": 1887678,
+    "valid_english_sentences_without_either_required_link": 1832692,
+    "valid_english_sentences_excluded_from_pivot_population": 2023782,
+    "sample_500_direct_cmn_hun_flags": {
+      "no": 498,
+      "yes": 2
+    },
+    "pilot_30_direct_cmn_hun_flags": {
+      "no": 29,
+      "yes": 1
+    }
+  },
+  "seeds": {
+    "pivot": 2026,
+    "cmn": 2027,
+    "hun": 2028,
+    "pilot": 2030
+  },
+  "sampling_procedure": {
+    "pivot": "random.Random(2026).sample(sorted eligible numeric English IDs, 500); then sort chosen IDs numerically",
+    "cmn": "Independent random.Random(2027); one choice from sorted numeric direct Chinese neighbors for each chosen English ID in ascending order",
+    "hun": "Independent random.Random(2028); one choice from sorted numeric direct Hungarian neighbors for each chosen English ID in ascending order",
+    "pilot": "random.Random(2030).sample(500 records in ascending record-ID/English-ID order, 30); preserve draw order",
+    "record_id": "TCE-0001 through TCE-0500 assigned in ascending chosen English-ID order",
+    "probability": "Each eligible English pivot has inclusion probability 500/N; triples are not sampled uniformly across the Cartesian population"
+  },
+  "direct_link_definitions": {
+    "required": "An explicit ordered (eng_id, cmn_id) row and explicit ordered (eng_id, hun_id) row in the corresponding official link files, sharing the same English ID; all endpoints pass sentence validation.",
+    "optional": "yes = explicit ordered (cmn_id, hun_id) in available cmn-hun export; no = absent from that available export; unknown = optional export unavailable. This flag never filters sampling.",
+    "interpretation": "Community links are not proof of semantic equivalence. English is a pivot/reference, not necessarily the historical original."
+  },
+  "validation_policy": "Strict UTF-8; unquoted TSV; exact 3 sentence columns/2 link columns; positive ASCII numeric IDs; expected language; nonblank text; deduplicate identical IDs and edges; reject missing/rejected endpoints. Conflicting repeated IDs abort.",
+  "exclusion_log": "data/metadata/exclusions.csv; one mutually exclusive first-failure reason per excluded row; no semantic filtering",
+  "text_lengths_unicode_codepoints": {
+    "eng": {
+      "eligible_unique_sentences": {
+        "n": 17795,
+        "min": 3,
+        "p25": 19,
+        "median": 25.0,
+        "p75": 33,
+        "p95": 49,
+        "max": 323,
+        "mean": 27.296937341949985
+      },
+      "sample_500": {
+        "n": 500,
+        "min": 5,
+        "p25": 19,
+        "median": 25.0,
+        "p75": 33,
+        "p95": 50,
+        "max": 125,
+        "mean": 27.462
+      },
+      "pilot_30": {
+        "n": 30,
+        "min": 15,
+        "p25": 20,
+        "median": 26.0,
+        "p75": 35,
+        "p95": 46,
+        "max": 49,
+        "mean": 28.133333333333333
+      }
+    },
+    "cmn": {
+      "eligible_unique_sentences": {
+        "n": 17921,
+        "min": 2,
+        "p25": 6,
+        "median": 8.0,
+        "p75": 10,
+        "p95": 16,
+        "max": 111,
+        "mean": 8.961944087941522
+      },
+      "sample_500": {
+        "n": 500,
+        "min": 2,
+        "p25": 6,
+        "median": 8.0,
+        "p75": 11,
+        "p95": 15,
+        "max": 55,
+        "mean": 8.926
+      },
+      "pilot_30": {
+        "n": 30,
+        "min": 4,
+        "p25": 6,
+        "median": 8.0,
+        "p75": 11,
+        "p95": 15,
+        "max": 15,
+        "mean": 8.666666666666666
+      }
+    },
+    "hun": {
+      "eligible_unique_sentences": {
+        "n": 22572,
+        "min": 3,
+        "p25": 17,
+        "median": 23.0,
+        "p75": 31,
+        "p95": 48,
+        "max": 349,
+        "mean": 25.492158426368952
+      },
+      "sample_500": {
+        "n": 500,
+        "min": 5,
+        "p25": 18,
+        "median": 24.0,
+        "p75": 32,
+        "p95": 48,
+        "max": 142,
+        "mean": 26.306
+      },
+      "pilot_30": {
+        "n": 30,
+        "min": 14,
+        "p25": 19,
+        "median": 23.0,
+        "p75": 32,
+        "p95": 45,
+        "max": 53,
+        "mean": 25.966666666666665
+      }
+    }
+  },
+  "verification": {
+    "status": "passed",
+    "verified_utc": "2026-11-22T09:21:32.132183+00:00",
+    "candidate_rows": 500,
+    "pilot_rows": 30,
+    "checks": [
+      "unique record IDs, English IDs and triples",
+      "exact original texts and existing language-specific IDs",
+      "both required direct English edges",
+      "optional direct cmn–hun flags",
+      "pilot full-row membership and seed",
+      "pending/no metadata; no human review claimed",
+      "deterministic resampling equality"
+    ]
+  },
+  "license": {
+    "name": "CC BY 2.0 FR",
+    "url": "https://creativecommons.org/licenses/by/2.0/fr/",
+    "attribution": "Sentence texts by Tatoeba contributors, via Tatoeba (https://tatoeba.org/). Sentence IDs retained for contributor tracing."
+  },
+  "outputs": {
+    "data/processed/trilingual_500_candidates.csv": {
+      "rows": 500,
+      "sha256": "9bf80181b92dc8685edab27f9fa227a560495084768e0a63d87fcf6260990d3d"
+    },
+    "data/processed/pilot_30.csv": {
+      "rows": 30,
+      "sha256": "729bdd183dc677edc1f4e2ff9bc8ea9c0966ae17447318d113eec87abc07a083"
+    }
+  },
+  "script_sha256": "de6e7b904014b80ff3b6c16be400a1b033ccea24c7f9629c1077dbab19ae918f"
+}

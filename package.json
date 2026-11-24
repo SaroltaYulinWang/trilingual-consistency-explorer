@@ -1,0 +1,18 @@
+{
+  "name": "when-translations-disagree",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build_website_data.py && node scripts/build_website.mjs",
+    "preview": "node scripts/serve_website.mjs --dir dist --port 4173",
+    "check:public": "node --check web/app.js && node --check web/core.js && node --check web/charts.js && node --check web/content.js && node --check web/citations.js && node --check web/ai_declaration.js && node --check web/language_parts.js && node scripts/verify_public_release.mjs && node --check web/header_layout.js",
+    "test:public": "node --test tests/public_release.test.mjs tests/language_parts_public.test.mjs",
+    "check": "node --check web/app.js && node --check web/core.js && node --check web/charts.js && node --check web/content.js && node --check web/citations.js && node --check web/ai_declaration.js && node --check web/language_parts.js && node scripts/verify_public_release.mjs && node --check web/header_layout.js",
+    "test": "node --test tests/public_release.test.mjs tests/language_parts_public.test.mjs",
+    "test:browser": "node scripts/test_website_browser.mjs && node scripts/test_visualization_refinement_browser.mjs && node scripts/test_functionality_fixes_browser.mjs && node scripts/test_technical_refinement_browser.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

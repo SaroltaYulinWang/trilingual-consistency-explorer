@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "revision_id": "approved-ui-lqa-2026-11-24",
+  "recorded_date": "2026-11-24",
+  "authorization": "Explicit Task17 instruction approving10 narrowly scoped UI corrections; only items2 and3 authorize English UI edits. No academic translation review.",
+  "academic_freeze_manifest_sha256": "e46f66b780867a4ac945c2e0667c455487f3505b956b0f4a4963288461e9a49a",
+  "files": {
+    "web/app.js": {
+      "previous_sha256": "14a5d87ca1bec4787bb5599a088ad6ccd2a24ffe8e16aa03edf4b7db9482f4e9",
+      "current_sha256": "482c682113cb5a668dfbe8d7a404bba2c355a6b53dbedbd777d59c996e085e47",
+      "changes": [
+        {
+          "language": "en",
+          "key": "issues",
+          "before": "issues:'Documented issues'",
+          "after": "issues:'Recorded labels'"
+        },
+        {
+          "language": "zh",
+          "key": "heatNote",
+          "before": "heatNote:'每條不同記錄在每個已記錄標籤下只計一次。多標籤記錄可出現在多行，不能把行數相加當作不同記錄總數。「未記錄現象標籤」表示沒有記錄輔助標籤，不代表沒有語言變化。人工 none 值與 AI 空輔助列表各自保留原始來源，不假定兩者的標註過程相同。'",
+          "after": "heatNote:'每條不同記錄在每個已記錄標籤下只計一次。同一筆記錄可能對應多個顯示標籤，因此不能將各標籤的記錄數直接相加，當作不重複記錄的總數。「未記錄現象標籤」表示沒有記錄輔助標籤，不代表沒有語言變化。人工 none 值與 AI 空輔助列表各自保留原始來源，不假定兩者的標註過程相同。'"
+        },
+        {
+          "language": "zh",
+          "key": "issues",
+          "before": "issues:'已記錄問題'",
+          "after": "issues:'已記錄標籤'"
+        },
+        {
+          "language": "zh",
+          "key": "minimum",
+          "before": "minimum:'每行最低出現數'",
+          "after": "minimum:'每行最少記錄數'"
+        },
+        {
+          "language": "zh",
+          "key": "provider",
+          "before": "provider:'提供方式'",
+          "after": "provider:'服務提供者'"
+        },
+        {
+          "language": "zh",
+          "key": "display",
+          "before": "display:'展示分組'",
+          "after": "display:'顯示標籤'"
+        },
+        {
+          "language": "zh",
+          "key": "direct",
+          "before": "direct:'已保存導出中的直接中匈連結'",
+          "after": "direct:'已保存的匯出檔中的直接中匈連結'"
+        },
+        {
+          "language": "zh",
+          "key": "directNote",
+          "before": "directNote:'兩組必需的英語連結已與保存的導出核對。直接中匈連結另行記錄，絕不由樞軸推定。'",
+          "after": "directNote:'兩組必需的英語連結已與保存的匯出檔核對。直接中匈連結另行記錄，絕不由樞軸推定。'"
+        },
+        {
+          "language": "zh",
+          "key": "license",
+          "before": "license:'句子文本由 Tatoeba 貢獻者提供，採 CC BY 2.0 FR。保留原有中文書體、標點與匈牙利語重音。'",
+          "after": "license:'句子文本由 Tatoeba 貢獻者提供，採 CC BY 2.0 FR。保留原有書寫形式、標點及重音符號。'"
+        },
+        {
+          "language": "zh",
+          "key": "about",
+          "before": "about:'關於與 AI 使用'",
+          "after": "about:'關於研究與 AI 使用'"
+        },
+        {
+          "language": "zh",
+          "key": "scopeBody",
+          "before": "scopeBody:'英語是參照樞軸，不一定是歷史上的原文。50 條人工複核與 450 條 AI-only 標註在所有介面中均清楚區分。'",
+          "after": "scopeBody:'英語是參照樞軸，不一定是歷史上的原文。50 條人工複核與 450 條僅 AI 標註在所有介面中均清楚區分。'"
+        },
+        {
+          "language": "zh",
+          "key": "sankeyCaption",
+          "before": "sankeyCaption:'人工（Human）與 AI-only 標註分別如何分布於五個主要類別？'",
+          "after": "sankeyCaption:'人工複核與僅 AI 標註的記錄，分別如何分布於五個主要類別？'"
+        },
+        {
+          "language": "zh",
+          "key": "aiCaution",
+          "before": "aiCaution:'AI-only 判讀：屬探索性標註，尚未經獨立人工複核。'",
+          "after": "aiCaution:'僅 AI 標註的判讀：屬探索性標註，尚未經獨立人工複核。'"
+        },
+        {
+          "language": "zh",
+          "key": "methodologicalNote",
+          "before": "methodologicalNote:'本研究由單一研究者進行。450 條 AI-only 標註尚未經獨立人工驗證；框架獲批並不確立每項判讀的語言學有效性。'",
+          "after": "methodologicalNote:'本研究由單一研究者進行。450 條僅 AI 標註的記錄尚未經獨立人工驗證；框架獲批並不確立每項判讀的語言學有效性。'"
+        }
+      ]
+    },
+    "web/charts.js": {
+      "previous_sha256": "6d05f84bdc5c3d24df03024485b0d0e87f8d9754d5bb51ac8f01c0510db1bc03",
+      "current_sha256": "2dffb99e24e3f9aec7fd67738f3f781f96b158358d4b66f6ea9a8195767cd15c",
+      "changes": [
+        {
+          "before": "佔該來源 ${pct(flow.count, origins[flow.origin])}",
+          "after": "佔該複核組別 ${pct(flow.count, origins[flow.origin])}"
+        },
+        {
+          "before": "of that origin;",
+          "after": "of that review group;"
+        },
+        {
+          "before": "準確選取來源與類別。",
+          "after": "準確選取複核狀態與類別。"
+        },
+        {
+          "before": "select an exact source/category pair.",
+          "after": "select an exact review status and category."
+        },
+        {
+          "before": "依標註來源與主類別分組的記錄流量圖",
+          "after": "依複核狀態與主類別分組的記錄流量圖"
+        },
+        {
+          "before": "Record flows by annotation origin and primary category;",
+          "after": "Record flows by review status and primary category;"
+        },
+        {
+          "before": "${zh ? '標註來源' : 'Origin'}",
+          "after": "${zh ? '複核狀態' : 'Review status'}"
+        },
+        {
+          "before": "同一記錄在每個顯示標籤或大類下只計一次，可同時屬於多行，故各列不能相加。",
+          "after": "同一筆記錄在每個顯示標籤或大類下只計一次，但可能同時出現在多行，因此不能將各行的記錄數直接相加，當作不重複記錄的總數。"
+        }
+      ]
+    }
+  }
+}

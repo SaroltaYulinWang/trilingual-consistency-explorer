@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "revision_id": "researcher-approved-ux-copy-2026-11-24",
+  "recorded_date": "2026-11-24",
+  "authorization": "Explicit Task16A researcher instruction:15 approved changes,16 source keys per language; English exact, targeted Traditional Chinese synchronization.",
+  "scope": "Only32 keyed UI string values in web/app.js; no rendering/state/data/academic content changes.",
+  "academic_freeze_manifest_sha256": "e46f66b780867a4ac945c2e0667c455487f3505b956b0f4a4963288461e9a49a",
+  "academic_component_hashes": {
+    "learning_report": {
+      "sha256": "936bc7f077992b142dfa192e05065c8d38baef81f9012f6f0ce82330ff73f2e6",
+      "serialization": "UTF-8 JSON.stringify(value), object insertion order as current exports; no whitespace. Freeze English academic fields, not unrelated UI text."
+    },
+    "codebook": {
+      "sha256": "166b3e16ea1aa8101e8c85a1fe5bc89448aa9f5357d40f03ca8ff30aaae2d219",
+      "serialization": "UTF-8 JSON.stringify(value), object insertion order as current exports; no whitespace. Freeze English academic fields, not unrelated UI text."
+    },
+    "decision_sequence": {
+      "sha256": "5e05fdac7c064ca8f5623f72c7b12c711636b01980fc407d753319056a82d4ed",
+      "serialization": "UTF-8 JSON.stringify(value), object insertion order as current exports; no whitespace. Freeze English academic fields, not unrelated UI text."
+    },
+    "references": {
+      "sha256": "8bed86388b6f5789cfa028bc836b0b6d725ba01590b6685e7ccafb719fef8016",
+      "serialization": "UTF-8 JSON.stringify(references), recursively projecting bilingual {en,zh} values to en; arrays and other object insertion order retained."
+    },
+    "ai_use_declaration_v2": {
+      "sha256": "feb01cdf0b0c4530432cf13af7557f901f25e1ac23be4f3350f69c12caeebabd",
+      "serialization": "UTF-8 JSON.stringify(value), object insertion order as current exports; no whitespace. Freeze English academic fields, not unrelated UI text."
+    },
+    "method_notes": {
+      "sha256": "5ea7aaedc348fd2589ef871b4842f20a5af130c260cb57156c3629bf17c740d5",
+      "serialization": "UTF-8 JSON.stringify(value), object insertion order as current exports; no whitespace. Freeze English academic fields, not unrelated UI text."
+    }
+  },
+  "previous_app_sha256": "05af13f92b58f2c45937bd07111a3e0874e40b74c4e384ca3578579da93ade8e",
+  "current_app_sha256": "14a5d87ca1bec4787bb5599a088ad6ccd2a24ffe8e16aa03edf4b7db9482f4e9",
+  "changes": [
+    {
+      "language": "en",
+      "key": "subtitle",
+      "before": "subtitle:'A Trilingual Corpus Explorer for Semantic Consistency Auditing'",
+      "after": "subtitle:'Compare meaning across English, Chinese and Hungarian.'"
+    },
+    {
+      "language": "en",
+      "key": "hero",
+      "before": "hero:'Explore how English-linked Chinese and Hungarian sentences preserve, reshape or potentially diverge in meaning.'",
+      "after": "hero:'Explore 500 Tatoeba sentence triples linked through a shared English reference sentence. See where meanings align, vary, or warrant closer inspection.'"
+    },
+    {
+      "language": "en",
+      "key": "exploreTitle",
+      "before": "exploreTitle:'Read across languages.'",
+      "after": "exploreTitle:'Explore the trilingual corpus'"
+    },
+    {
+      "language": "en",
+      "key": "exploreLead",
+      "before": "exploreLead:'Search an expression, narrow the evidence, and inspect the linked sentences.'",
+      "after": "exploreLead:'Search any of the three languages or a record ID. Use the filters, then select Details to inspect the full triple and its source evidence.'"
+    },
+    {
+      "language": "en",
+      "key": "visualTitle",
+      "before": "visualTitle:'Follow a pattern. Inspect its evidence.'",
+      "after": "visualTitle:'Explore translation patterns'"
+    },
+    {
+      "language": "en",
+      "key": "visualLead",
+      "before": "visualLead:'Three linked analytical views, one shared selection. Every interaction updates the same corpus underneath.'",
+      "after": "visualLead:'Use Sankey to compare review status and semantic categories, Heatmap to examine recorded labels by category, and KWIC to view search terms in context. All views and records share the same filters.'"
+    },
+    {
+      "language": "en",
+      "key": "origin",
+      "before": "origin:'Annotation source'",
+      "after": "origin:'Review status'"
+    },
+    {
+      "language": "en",
+      "key": "allOrigins",
+      "before": "allOrigins:'All annotation sources'",
+      "after": "allOrigins:'All review statuses'"
+    },
+    {
+      "language": "en",
+      "key": "sankeyTitle",
+      "before": "sankeyTitle:'From annotation origin to interpretation'",
+      "after": "sankeyTitle:'From review status to semantic category'"
+    },
+    {
+      "language": "en",
+      "key": "heatTitle",
+      "before": "heatTitle:'Where documented phenomena cluster'",
+      "after": "heatTitle:'Recorded labels by category'"
+    },
+    {
+      "language": "en",
+      "key": "kwicTitle",
+      "before": "kwicTitle:'Interactive Lexical Explorer'",
+      "after": "kwicTitle:'Search terms in context (KWIC)'"
+    },
+    {
+      "language": "en",
+      "key": "term",
+      "before": "term:'Concordance term'",
+      "after": "term:'Word or expression'"
+    },
+    {
+      "language": "en",
+      "key": "kwicPlaceholder",
+      "before": "kwicPlaceholder:'Try get, 我, or nem…'",
+      "after": "kwicPlaceholder:'Enter a word or expression…'"
+    },
+    {
+      "language": "en",
+      "key": "bookTitle",
+      "before": "bookTitle:'A codebook for careful distinctions.'",
+      "after": "bookTitle:'Codebook: How cases are classified'"
+    },
+    {
+      "language": "en",
+      "key": "aboutTitle",
+      "before": "aboutTitle:'Make the research process inspectable.'",
+      "after": "aboutTitle:'About the research and AI use'"
+    },
+    {
+      "language": "en",
+      "key": "read",
+      "before": "read:'Read the learning report'",
+      "after": "read:'Read the method and findings'"
+    },
+    {
+      "language": "zh",
+      "key": "subtitle",
+      "before": "subtitle:'三語語料探索平台：語義一致性審核'",
+      "after": "subtitle:'比較英語、中文與匈牙利語的意義。'"
+    },
+    {
+      "language": "zh",
+      "key": "hero",
+      "before": "hero:'探索以英語連結的中文與匈牙利語句子，如何保留、重塑或可能偏離原有意義。'",
+      "after": "hero:'探索 Tatoeba 的 500 組三語句子，每組均透過同一英語參照句連結。看看哪些意義互相對應、有所變化，或值得進一步檢視。'"
+    },
+    {
+      "language": "zh",
+      "key": "exploreTitle",
+      "before": "exploreTitle:'在語言之間對讀。'",
+      "after": "exploreTitle:'探索三語語料庫'"
+    },
+    {
+      "language": "zh",
+      "key": "exploreLead",
+      "before": "exploreLead:'搜尋一個表達，聚焦所需證據，再細讀相連的三語句子。'",
+      "after": "exploreLead:'以三種語言中的任何一種或記錄 ID 搜尋。使用篩選器，再選擇「詳情」，檢視完整三語句組及其來源證據。'"
+    },
+    {
+      "language": "zh",
+      "key": "visualTitle",
+      "before": "visualTitle:'追蹤模式，檢視證據。'",
+      "after": "visualTitle:'探索翻譯模式'"
+    },
+    {
+      "language": "zh",
+      "key": "visualLead",
+      "before": "visualLead:'三種聯動分析，共用同一組篩選。每次操作都會更新其下的同一份語料。'",
+      "after": "visualLead:'使用 Sankey 比較複核狀態與語義類別，以 Heatmap 按類別檢視已記錄的標籤，並透過 KWIC 查看搜尋詞在語境中的用法。所有視圖與記錄共用同一組篩選條件。'"
+    },
+    {
+      "language": "zh",
+      "key": "origin",
+      "before": "origin:'標註來源'",
+      "after": "origin:'複核狀態'"
+    },
+    {
+      "language": "zh",
+      "key": "allOrigins",
+      "before": "allOrigins:'全部標註來源'",
+      "after": "allOrigins:'全部複核狀態'"
+    },
+    {
+      "language": "zh",
+      "key": "sankeyTitle",
+      "before": "sankeyTitle:'從標註來源看語義判讀'",
+      "after": "sankeyTitle:'從複核狀態看語義類別'"
+    },
+    {
+      "language": "zh",
+      "key": "heatTitle",
+      "before": "heatTitle:'已記錄現象聚集在哪裏？'",
+      "after": "heatTitle:'按類別檢視已記錄標籤'"
+    },
+    {
+      "language": "zh",
+      "key": "kwicTitle",
+      "before": "kwicTitle:'互動詞彙探索器'",
+      "after": "kwicTitle:'語境中的搜尋詞（KWIC）'"
+    },
+    {
+      "language": "zh",
+      "key": "term",
+      "before": "term:'語境索引詞'",
+      "after": "term:'詞語或表達'"
+    },
+    {
+      "language": "zh",
+      "key": "kwicPlaceholder",
+      "before": "kwicPlaceholder:'試試 get、我 或 nem…'",
+      "after": "kwicPlaceholder:'輸入詞語或表達…'"
+    },
+    {
+      "language": "zh",
+      "key": "bookTitle",
+      "before": "bookTitle:'為細緻區別建立判定規則。'",
+      "after": "bookTitle:'代碼本：如何判定個案類別'"
+    },
+    {
+      "language": "zh",
+      "key": "aboutTitle",
+      "before": "aboutTitle:'讓研究過程可以被檢視。'",
+      "after": "aboutTitle:'關於研究與 AI 使用'"
+    },
+    {
+      "language": "zh",
+      "key": "read",
+      "before": "read:'閱讀學習報告'",
+      "after": "read:'閱讀研究方法與發現'"
+    }
+  ]
+}

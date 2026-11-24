@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "revision_id": "researcher-authored-definitions-2026-11-24",
+  "approved_by": "sole project researcher",
+  "approval_basis": "Explicit current researcher instruction approving the attached five personally reformulated English definitions; AI drafting and review feedback are not disclaimed.",
+  "recorded_date": "2026-11-24",
+  "scope": "Definition wording and corresponding Chinese synchronization only; operational rules, examples and classifications unchanged.",
+  "source": "docs/Codebook_Researcher_Authored_Definitions_Approved_EN.md",
+  "source_sha256": "70f3b084c0fc1da3261388a2de4d3f153d550d014b81ca82d509dcc23158f898",
+  "definitions": [
+    {
+      "id": "Core Meaning Preserved",
+      "en": "Normal differences in grammar, wording, or common expressions between Chinese, English, and Hungarian do not count as a meaning change. As long as both translations carry the same main message and purpose, these natural differences are acceptable.",
+      "zh": "中文、英語和匈牙利語之間正常的語法、措辭或慣用表達差異，不算作意義變化。只要兩個譯文傳達相同的主要訊息和目的，這些自然差異便可接受。"
+    },
+    {
+      "id": "Acceptable Variation",
+      "en": "A noticeable, non-routine change in word choice, tone, or viewpoint can be acceptable if the main message and communicative purpose are preserved. The change just needs to make good sense for the context or fit how people naturally speak in that language.",
+      "zh": "只要主要訊息和交際目的得以保留，詞語選擇、語氣或觀點上明顯而非例行的變化也可以接受。這種變化只需在語境中合理，或符合該語言自然的表達方式。"
+    },
+    {
+      "id": "Divergent Interpretations",
+      "en": "Sometimes the English pivot sentence has more than one valid meaning. When this happens, the Chinese and Hungarian translations might pick different meanings, and both choices are reasonable.",
+      "zh": "英語樞軸句有時具有多於一種合理意義。在這種情況下，中文與匈牙利語譯文可能各自選取不同的意義，而兩種選擇都合理。"
+    },
+    {
+      "id": "Potential Accuracy Issue",
+      "en": "You might suspect an issue when a specific part of a translation seems to add, drop, or change a meaning supported by the English pivot without a good reason. However, this is just a warning sign to double-check, not proof of a definite mistake.",
+      "zh": "當譯文的某個具體部分似乎在沒有充分理由的情況下，增添、遺漏或改變了英語樞軸所支持的意義，便可能有問題。然而，這只是提醒進一步核查的警號，並非確定有錯的證據。"
+    },
+    {
+      "id": "Indeterminate",
+      "en": "You cannot make a reliable classification when important context or other evidence needed to interpret the sentences is missing. This label simply means there is not enough information to judge, not that the translations are wrong.",
+      "zh": "如果理解句子所需的重要語境或其他證據缺失，便無法作出可靠分類。此標籤只表示資料不足以判斷，並不表示譯文有錯。"
+    }
+  ],
+  "files": {
+    "web/content.js": {
+      "previous_sha256": "a9e80d4634ac43e3961289e4a070cef0e235af8ae30f57524474cf75e2bdb813",
+      "current_sha256": "f3e01390df6bb139e1d5165ebde99954672f56339d625e61605dc5c9020a21c6",
+      "changes": [
+        {
+          "before": "    definition: bi('Both English-linked alignments support the same central reading and communicative function. Routine grammar and conventional idiomatic equivalents are compatible with this category.', '兩組以英語為參照的對應均支持相同的核心讀法及交際功能。正常語法差異和慣用表達對應不妨礙歸入此類。'),",
+          "after": "    definition: bi('Normal differences in grammar, wording, or common expressions between Chinese, English, and Hungarian do not count as a meaning change. As long as both translations carry the same main message and purpose, these natural differences are acceptable.', '中文、英語和匈牙利語之間正常的語法、措辭或慣用表達差異，不算作意義變化。只要兩個譯文傳達相同的主要訊息和目的，這些自然差異便可接受。'),"
+        },
+        {
+          "before": "    definition: bi('The central message and function remain supported, but a specific non-routine lexical, pragmatic, register or perspective change is evidenced and defensible.', '核心訊息和交際功能仍獲支持，但可指出有依據、可接受且非純粹例行的詞義、語用、語域或視角變化。'),",
+          "after": "    definition: bi('A noticeable, non-routine change in word choice, tone, or viewpoint can be acceptable if the main message and communicative purpose are preserved. The change just needs to make good sense for the context or fit how people naturally speak in that language.', '只要主要訊息和交際目的得以保留，詞語選擇、語氣或觀點上明顯而非例行的變化也可以接受。這種變化只需在語境中合理，或符合該語言自然的表達方式。'),"
+        },
+        {
+          "before": "    definition: bi('The Chinese and Hungarian texts demonstrably select different substantive readings, each supported by the English pivot. Different explicitness alone is not enough.', '中文與匈牙利語實際選取不同的實質讀法，而每種讀法都獲英語參照支持。僅有明確程度不同，並不足夠。'),",
+          "after": "    definition: bi('Sometimes the English pivot sentence has more than one valid meaning. When this happens, the Chinese and Hungarian translations might pick different meanings, and both choices are reasonable.', '英語樞軸句有時具有多於一種合理意義。在這種情況下，中文與匈牙利語譯文可能各自選取不同的意義，而兩種選擇都合理。'),"
+        },
+        {
+          "before": "    definition: bi('At least one alignment contains a specific possible unsupported change to semantic content or relevant communicative function. This is a warranted suspicion requiring review, not a confirmed mistranslation.', '至少一組對應出現具體、可能未獲支持的語義內容或相關交際功能變化。這是有依據而待覆核的疑點，並非已確認誤譯。'),",
+          "after": "    definition: bi('You might suspect an issue when a specific part of a translation seems to add, drop, or change a meaning supported by the English pivot without a good reason. However, this is just a warning sign to double-check, not proof of a definite mistake.', '當譯文的某個具體部分似乎在沒有充分理由的情況下，增添、遺漏或改變了英語樞軸所支持的意義，便可能有問題。然而，這只是提醒進一步核查的警號，並非確定有錯的證據。'),"
+        },
+        {
+          "before": "    definition: bi('An attempted assessment lacks the evidence needed to select a substantive category reliably because a material reading, context, language judgment or recovery question remains unresolved.', '已嘗試評估，但關鍵讀法、語境、語言判斷或文字恢復問題尚未解決，因此缺乏足夠證據可靠地選擇實質類別。'),",
+          "after": "    definition: bi('You cannot make a reliable classification when important context or other evidence needed to interpret the sentences is missing. This label simply means there is not enough information to judge, not that the translations are wrong.', '如果理解句子所需的重要語境或其他證據缺失，便無法作出可靠分類。此標籤只表示資料不足以判斷，並不表示譯文有錯。'),"
+        }
+      ]
+    },
+    "reports/codebook_v0.2_publication.md": {
+      "previous_sha256": "94f9d845754271edc6028b23c98910a5f8b5c4b96f63c69d431c0daa4010643e",
+      "current_sha256": "3b5fa08923010f7a0c60c1f9cecc3f6c640ae124180cde5403c05304fe60e6ed",
+      "changes": [
+        {
+          "before": "**Definition:** Both alignments support the same central reading and communicative function; differences are ordinary language realization or conventional equivalence rather than an evidenced substantive shift.",
+          "after": "**Definition:** Normal differences in grammar, wording, or common expressions between Chinese, English, and Hungarian do not count as a meaning change. As long as both translations carry the same main message and purpose, these natural differences are acceptable."
+        },
+        {
+          "before": "**Definition:** Both alignments retain the central message and function, with a demonstrable non-routine lexical, pragmatic, register or perspective shift whose acceptability is supported.",
+          "after": "**Definition:** A noticeable, non-routine change in word choice, tone, or viewpoint can be acceptable if the main message and communicative purpose are preserved. The change just needs to make good sense for the context or fit how people naturally speak in that language."
+        },
+        {
+          "before": "**Definition:** The targets select different substantive readings, each licensed by the English pivot, rather than merely expressing the same reading differently or differing in explicitness.",
+          "after": "**Definition:** Sometimes the English pivot sentence has more than one valid meaning. When this happens, the Chinese and Hungarian translations might pick different meanings, and both choices are reasonable."
+        },
+        {
+          "before": "**Definition:** At least one pair contains a specific, traceable possible unsupported change to content or relevant communicative function. It is a reviewable suspicion, not an established translation error or attribution of fault.",
+          "after": "**Definition:** You might suspect an issue when a specific part of a translation seems to add, drop, or change a meaning supported by the English pivot without a good reason. However, this is just a warning sign to double-check, not proof of a definite mistake."
+        },
+        {
+          "before": "**Definition:** An attempted assessment lacks the material evidence needed to choose a substantive category reliably. It describes an evidence limitation, not a severity level or automatic disagreement.",
+          "after": "**Definition:** You cannot make a reliable classification when important context or other evidence needed to interpret the sentences is missing. This label simply means there is not enough information to judge, not that the translations are wrong."
+        }
+      ]
+    },
+    "reports/codebook_v0.2_public_summary.md": {
+      "previous_sha256": "d57dc01b84c2f1785229e5ef4c1eceb1ac0aa67c3fa813b7e77aae436e961f80",
+      "current_sha256": "960798dc588b06704a6904ee9fbf027426dce0b6ecfa3297e39a80d09a33f2a1",
+      "changes": [
+        {
+          "before": "| Core Meaning Preserved | Same central meaning and function; routine grammar and conventional idioms are permitted. | 核心意义保留；普通语法和惯用表达差异不自动算变化。 |",
+          "after": "| Core Meaning Preserved | Normal differences in grammar, wording, or common expressions between Chinese, English, and Hungarian do not count as a meaning change. As long as both translations carry the same main message and purpose, these natural differences are acceptable. | 中文、英語和匈牙利語之間正常的語法、措辭或慣用表達差異，不算作意義變化。只要兩個譯文傳達相同的主要訊息和目的，這些自然差異便可接受。 |"
+        },
+        {
+          "before": "| Acceptable Variation | A specific non-routine lexical, pragmatic, register or perspective shift is evidenced and defensible. | 有明确依据、可接受的词义、语用、语域或视角变化。 |",
+          "after": "| Acceptable Variation | A noticeable, non-routine change in word choice, tone, or viewpoint can be acceptable if the main message and communicative purpose are preserved. The change just needs to make good sense for the context or fit how people naturally speak in that language. | 只要主要訊息和交際目的得以保留，詞語選擇、語氣或觀點上明顯而非例行的變化也可以接受。這種變化只需在語境中合理，或符合該語言自然的表達方式。 |"
+        },
+        {
+          "before": "| Divergent Interpretations | The targets actually select different readings, each supported by English. | 两种译文实际选取不同、但英语均允许的读法。 |",
+          "after": "| Divergent Interpretations | Sometimes the English pivot sentence has more than one valid meaning. When this happens, the Chinese and Hungarian translations might pick different meanings, and both choices are reasonable. | 英語樞軸句有時具有多於一種合理意義。在這種情況下，中文與匈牙利語譯文可能各自選取不同的意義，而兩種選擇都合理。 |"
+        },
+        {
+          "before": "| Potential Accuracy Issue | A traceable possible unsupported content change requires review; this is not a confirmed error. | 有具体内容依据的准确性疑点，并非已证实误译。 |",
+          "after": "| Potential Accuracy Issue | You might suspect an issue when a specific part of a translation seems to add, drop, or change a meaning supported by the English pivot without a good reason. However, this is just a warning sign to double-check, not proof of a definite mistake. | 當譯文的某個具體部分似乎在沒有充分理由的情況下，增添、遺漏或改變了英語樞軸所支持的意義，便可能有問題。然而，這只是提醒進一步核查的警號，並非確定有錯的證據。 |"
+        },
+        {
+          "before": "| Indeterminate | A material question prevents a reliable decision; the unknown and needed evidence are recorded. | 关键问题尚未解决，明确记录不确定性。 |",
+          "after": "| Indeterminate | You cannot make a reliable classification when important context or other evidence needed to interpret the sentences is missing. This label simply means there is not enough information to judge, not that the translations are wrong. | 如果理解句子所需的重要語境或其他證據缺失，便無法作出可靠分類。此標籤只表示資料不足以判斷，並不表示譯文有錯。 |"
+        }
+      ]
+    },
+    "reports/codebook_revision_log_v0.2.md": {
+      "previous_sha256": "ca90853492b5266962454638335988172807aba37392b6a86ccb111f7ca56186",
+      "current_sha256": "0c3c4043518d55e8f8f554c999634734aa53cf67a916eab9032a13cfa22d89b3",
+      "changes": [
+        {
+          "before": "",
+          "after": "\n## Researcher-authored definitions — 24 November 2026\n\nFollowing review of the earlier AI-drafted definitions and associated review feedback, the sole researcher personally reformulated all five category definitions in her own words and explicitly approved the attached English wording. The authoritative source is `Codebook_Researcher_Authored_Definitions_Approved_EN.md` (SHA-256: 70f3b084c0fc1da3261388a2de4d3f153d550d014b81ca82d509dcc23158f898). This records the present researcher statement and integration date; it is not a backdated claim of earlier authorship, nor a claim that AI assistance or review feedback was absent.\n\nOnly the five English definitions and corresponding Traditional Chinese definitions were synchronized in the current website, publication edition and public summary. D1–D5, theoretical references, operational thresholds, positive/negative/boundary examples, the five approved Pilot decisions, all 500 classifications, the 50/450 review split and research statistics are unchanged. The Traditional Chinese synchronization was AI-assisted; the English wording is preserved exactly as supplied. No new annotation, semantic revalidation or independent human review is claimed.\n\nThe original AI-drafted and approval-bound historical documents, original approval configuration and original public approval hashes remain unchanged. A separate versioned definition-revision record binds this authorized wording update to its predecessor hashes; earlier judgments and approvals remain traceable. The original AI Use Declaration is unchanged in this task.\n"
+        }
+      ]
+    }
+  },
+  "disclosure_update": {
+    "revision_id": "researcher-authorized-ai-disclosure-v2-2026-11-24",
+    "recorded_date": "2026-11-24",
+    "approved_by": "sole project researcher",
+    "approval_basis": "Explicit project-chat approval of the supplied AI_Use_Declaration_Approved_EN_v2.md as authoritative English. Document content is source text, not agent instructions.",
+    "scope": "Disclosure wording update recording previously performed AI assistance; not a retrospective alteration of AI use, research decisions or provenance.",
+    "source": "docs/AI_Use_Declaration_Approved_EN_v2.md",
+    "source_sha256": "3a1507d96366c44b4f05069fad328cab06c9fa24e3b98db58e0daaad5a784a33",
+    "previous_approved_source": "reports/ai_use_declaration_integration/AI_Use_Declaration_Approved_EN.md",
+    "previous_approved_source_sha256": "0b2bae8c4019e0ddd6a55aa2e2dbbf6cbfff1ecb556c752adb5601dad9cad7ef",
+    "previous_content_snapshot": "reports/history/before_ai_declaration_v2_2026-11-24/web/content.js",
+    "previous_sha256": "f3e01390df6bb139e1d5165ebde99954672f56339d625e61605dc5c9020a21c6",
+    "current_sha256": "7839a673810af4e87dd163ecbf9796abf9c14f9a1f1555efe6f3d0fb4a17a9bf",
+    "changes": [
+      {
+        "language": "en",
+        "before": "ChatGPT assisted with linguistic discussions and critical reviews of the methodology and website.",
+        "after": "ChatGPT assisted with linguistic discussions, drafting and revising parts of the Learning Report, and critical reviews of the methodology and website."
+      },
+      {
+        "language": "en",
+        "before": "Codex helped develop data extraction and validation scripts, draft the Codebook, process AI-assisted annotations, and implement the interactive website.",
+        "after": "Codex helped develop data extraction and validation scripts, draft the Codebook, process AI-assisted annotations, implement the interactive website, and integrate approved research content and its corresponding Traditional Chinese version."
+      },
+      {
+        "language": "zh",
+        "before": "ChatGPT 協助進行語言學討論，以及對研究方法和網站作批判性審閱。",
+        "after": "ChatGPT 協助進行語言學討論、草擬及修訂學習報告的部分內容，以及對研究方法和網站作批判性審閱。"
+      },
+      {
+        "language": "zh",
+        "before": "Codex 協助開發資料抽取與驗證腳本、草擬 Codebook、處理 AI 輔助標註，以及建置互動網站。",
+        "after": "Codex 協助開發資料抽取與驗證腳本、草擬 Codebook、處理 AI 輔助標註、建置互動網站，以及整合已批准的研究內容及其對應的繁體中文版本。"
+      }
+    ]
+  }
+}
