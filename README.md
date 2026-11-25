@@ -1,6 +1,6 @@
 # When Translations Disagree
 
-A bilingual English / Traditional Chinese research explorer for 500 authentic English–Chinese–Hungarian triples. The original annotated corpus remains read-only: **50 human-reviewed records, 450 AI-only annotations**. English is a reference pivot, not necessarily the historical original; a Tatoeba community link does not guarantee equivalence.
+A multilingual research explorer for 500 authentic English–Chinese–Hungarian triples. The original annotated corpus remains read-only: **50 human-reviewed records, 450 AI-only annotations**. English is a reference pivot, not necessarily the historical original; a Tatoeba community link does not guarantee equivalence.
 
 ## Start Here / Assessment Essentials
 
