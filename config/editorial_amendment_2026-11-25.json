@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "revision_id": "approved-editorial-amendment-2026-11-25",
+  "recorded_date": "2026-11-25",
+  "status": "RESEARCHER_AUTHORIZED_EDITORIAL_AMENDMENT",
+  "authorization": "Researcher explicitly approved the six bilingual provenance/reliability clarifications and the minimum versioned integrity-metadata updates required to publish them. Research and feature scope remain closed.",
+  "previous_frozen_public_commit": "92c811d9173b0e361534bdadd50635ae0b4d0b07",
+  "file": "web/content.js",
+  "previous_sha256": "960cb9a0f6f2ccf739fa783fb2fe12ef7ae6420959f7e82e55fca35f613b27b4",
+  "current_sha256": "579e6aaa94f1600eb0fe5035f9071cdb9abbbae5b742dd0d77fa2e6139eb6db7",
+  "changes": [
+    {
+      "scope": "analysis",
+      "language": "en",
+      "before": "        \"The result is an audit of the evidence supporting claims of consistency. The 32 Potential Accuracy Issue records and 16 Indeterminate records indicate where further review may be useful. All 450 AI-only annotations remain exploratory judgments, not human-validated ground truth.\"",
+      "after": "        \"The result is an audit of the evidence supporting claims of consistency. The 32 Potential Accuracy Issue records and 16 Indeterminate records indicate where further review may be useful. The original 450 AI-generated annotations remain exploratory judgments. Thirty of these records were subsequently examined through a separate human–AI diagnostic comparison. This did not overwrite their original annotation provenance or published categories, and the comparison did not independently validate the AI annotations as ground truth.\""
+    },
+    {
+      "scope": "analysis",
+      "language": "zh",
+      "before": "        \"結果是一項對一致性主張之證據的審核。32 條 Potential Accuracy Issue 與 16 條 Indeterminate 記錄，指出哪些地方可能值得進一步複核。全部 450 條 AI-only 標註仍是探索性判斷，而非經人工驗證的標準答案。\"",
+      "after": "        \"結果是一項對一致性主張之證據的審核。32 條 Potential Accuracy Issue 與 16 條 Indeterminate 記錄，指出哪些地方可能值得進一步複核。原有 450 條 AI 生成標註仍屬探索性判斷。其中 30 條記錄其後透過另行開展的人工與 AI 診斷比較加以檢視。這項比較沒有覆寫原有標註來源或已公布的類別，亦不構成對 AI 標註作為標準答案的獨立驗證。\""
+    },
+    {
+      "scope": "limitations",
+      "language": "en",
+      "before": "            \"At the original annotation stage, 50 records were manually reviewed by a single researcher and 450 received AI-only annotations. The subsequent 30-record diagnostic review is a separate comparison, not a replacement of those provenance flags. No second independent annotator was involved, and the study has no independent external gold standard.\",",
+      "after": "            \"At the original annotation stage, 50 records were manually reviewed by a single researcher and 450 received AI-only annotations. The subsequent 30-record diagnostic review is a separate comparison, not a replacement of those provenance flags. No second independent human annotator was involved, and the study has no independent external gold standard.\","
+    },
+    {
+      "scope": "limitations",
+      "language": "zh",
+      "before": "            \"在原始標註階段，50 條記錄由單一研究者人工複核，450 條接受僅 AI 標註。其後的 30 條診斷性複核是另行比較，不取代原有來源標誌。研究沒有第二位獨立標註者，亦沒有獨立外部金標準。\",",
+      "after": "            \"在原始標註階段，50 條記錄由單一研究者人工複核，450 條接受僅 AI 標註。其後的 30 條診斷性複核是另行比較，不取代原有來源標誌。研究沒有第二位獨立的人類標註者，亦沒有獨立外部金標準。\","
+    },
+    {
+      "scope": "reflection",
+      "language": "en",
+      "before": "        \"If I repeated the study, I would keep a dedicated log of any source-data corrections from the start, separate from changes to annotation categories. I would also seek a second reviewer for at least some borderline examples, if resources allowed. I was the sole reviewer for the 50 manual checks, so the study cannot report inter-annotator agreement.\",",
+      "after": "        \"If I repeated the study, I would keep a dedicated log of any source-data corrections from the start, separate from changes to annotation categories. I would also seek a second reviewer for at least some borderline examples, if resources allowed. I was the sole human reviewer for the original 50 manual checks, so that review did not establish human-to-human inter-annotator reliability. The subsequent 30-case Human–AI Comparison was a separate diagnostic study, not a substitute for independent human validation.\","
+    },
+    {
+      "scope": "reflection",
+      "language": "zh",
+      "before": "        \"若再次進行這項研究，我會從一開始便另設來源資料修正日誌，與標註類別的變更分開記錄。資源許可的話，我也會為至少部分邊界案例尋求第二位審閱者。50 條人工核驗只有我一位審閱者，因此本研究不能報告標註者間一致性。\",",
+      "after": "        \"若再次進行這項研究，我會從一開始便另設來源資料修正日誌，與標註類別的變更分開記錄。資源許可的話，我也會為至少部分邊界案例尋求第二位審閱者。原有 50 條人工核驗只有我一位人工審閱者，因此該次複核並未確立人類標註者之間的信度。其後的 30 案例人工與 AI 比較屬另一項診斷研究，不能取代獨立人工驗證。\","
+    }
+  ]
+}
