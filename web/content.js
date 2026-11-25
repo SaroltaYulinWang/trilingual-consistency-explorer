@@ -149,7 +149,8 @@ export const learningSections = [
         "I approved v0.2 and five explicit Pilot decisions: TCE-0469 Core, TCE-0481 Indeterminate, TCE-0399 Indeterminate, TCE-0111 Acceptable Variation, and TCE-0263 Core with suspected_typo. Four decisions changed the original main category; TCE-0111 retained its category with an explicitly approved rationale. Earlier judgments were preserved. The proposed recovery for TCE-0263 did not replace the original Chinese. These were annotation decisions, not five established translation errors.",
         "I later confirmed that manual verification of the 50 randomly selected records found no extraction or linkage errors. The reported counts were therefore 0 source-data errors and 0 required corpus corrections. Linguistic issues and classification inconsistencies were documented separately and excluded from those counts. This finding concerns the 50 checked records. It does not establish a zero-error rate for all 500.",
         "Only the remaining 450 records received new AI-only annotations through actual gpt-6.1-sol Codex CLI calls. A random dry run of 20 records, using seed 2041, passed mechanical validation before the other 430 were processed. EN–ZH and EN–HU were evaluated separately. Exact evidence spans, uncertainty, and model provenance were saved.",
-        "Final validation checked all 500 IDs, unchanged texts, and required links against the saved raw exports. The 50 human-review flags remained yes, while the 450 AI-only flags remained no. These checks establish file and procedural integrity, not independent linguistic agreement."
+        "Final validation checked all 500 IDs, unchanged texts, and required links against the saved raw exports. The 50 human-review flags remained yes, while the 450 AI-only flags remained no. These checks establish file and procedural integrity, not independent linguistic agreement.",
+        "A separate diagnostic follow-up sampled six records from each of the five existing AI categories within the 450 AI-only records, using seed 20261124 across sorted category pools and seed 20261125 for presentation order. As the sole researcher, I independently recorded initial judgments before seeing the case-level AI labels and reasons. The unedited judgments were frozen; subsequent ChatGPT language editing and three authorized rule-number typo corrections changed neither categories nor pairwise auxiliary decisions. After unblinding, saved AI annotations were compared with the frozen judgments. ChatGPT-assisted qualitative analysis of the 25 disagreements was then reviewed and accepted with its qualifications. This follow-up is separate from the original 50/450 annotation-provenance records and does not overwrite them."
       ],
       "zh": [
         "研究於 2026 年 11 月 22 日（UTC）取得 Tatoeba 官方英語、官話中文及匈牙利語句子匯出資料，以及直接連結匯出資料。入選條件為同一英語 ID 具有 EN–ZH 與 EN–HU 直接連邊、端點有效，且原文非空。檢查涵蓋 TSV 結構、語言代碼、ID 及文字欄位；重複邊檢測未在這些匯出資料中發現重複邊。",
@@ -162,7 +163,8 @@ export const learningSections = [
         "我批准了 v0.2 及五項明確的 Pilot 決定：TCE-0469 為核心意義保留、TCE-0481 為無法判定、TCE-0399 為無法判定、TCE-0111 為可接受變化，以及 TCE-0263 為核心意義保留並另記 suspected_typo。四項決定更改了原有主要類別；TCE-0111 保留原類別，但其判定理由獲明確批准。較早的判斷均予保留。TCE-0263 的文字恢復建議沒有取代中文原文。這些是標註決定，並非五個已確立的翻譯錯誤。",
         "我其後確認，對 50 條隨機抽取記錄的人工核驗，未發現抽取或連結錯誤。因此，報告數字為來源資料錯誤 0 項、原始語料所需修正 0 項。語言問題及分類不一致另行記錄，不計入這些數字。此結果只涉及已核驗的 50 條記錄，不能確立全部 500 條的錯誤率為零。",
         "只有餘下的 450 條記錄，透過實際的 gpt-6.1-sol Codex CLI 呼叫獲得新增的 AI-only 標註。先以種子 2041 隨機抽取 20 條作試跑，通過機械驗證後，才處理另外 430 條。EN–ZH 與 EN–HU 分別評估，並保存精確證據片段、不確定性及模型來源。",
-        "最終驗證對照保存的原始匯出資料，檢查全部 500 個 ID、未改動的原文及必要連結。50 條人工複核標誌維持 yes，450 條 AI-only 標誌維持 no。這些檢查確立的是檔案與程序完整性，而非獨立的語言判斷一致性。"
+        "最終驗證對照保存的原始匯出資料，檢查全部 500 個 ID、未改動的原文及必要連結。50 條人工複核標誌維持 yes，450 條 AI-only 標誌維持 no。這些檢查確立的是檔案與程序完整性，而非獨立的語言判斷一致性。",
+        "另行開展的診斷性追蹤研究，從原有 450 條僅 AI 標註記錄的五個類別各抽取六條，依次對已排序的類別候選池使用種子 20261124 抽樣，再以種子 20261125 打亂展示順序。作為唯一研究者，我在查看逐條 AI 標籤與理由前獨立作出初始判斷。未經編輯的判斷先行凍結；其後 ChatGPT 輔助的語言編輯及三處獲授權的規則編號筆誤修正，均未改變類別或兩組輔助判斷。揭盲後，以保存的 AI 標註對照凍結的人工判斷，再由研究者審閱並接受 ChatGPT 輔助的 25 案例分歧分析及其限定。此追蹤研究獨立於原有 50／450 標註來源記錄，不覆寫該層資料。"
       ]
     }
   },
@@ -227,7 +229,86 @@ export const learningSections = [
         "綜合而言，Sankey 桑基圖追溯類別分布的來源；Heatmap 熱圖說明為何不能自動把某個特徵等同某個類別；KWIC 則讓分析回到各項決定背後的實際表達。聯動篩選讓讀者在不同視圖檢視同一組記錄，而非把圖表視為彼此獨立的摘要。",
         "結果是一項對一致性主張之證據的審核。32 條 Potential Accuracy Issue 與 16 條 Indeterminate 記錄，指出哪些地方可能值得進一步複核。全部 450 條 AI-only 標註仍是探索性判斷，而非經人工驗證的標準答案。"
       ]
-    }
+    },
+    "subsections": [
+      {
+        "id": "human-ai-comparison",
+        "title": {
+          "en": "Human–AI Comparison",
+          "zh": "人工與 AI 比較"
+        },
+        "paragraphs": {
+          "en": [
+            "The fixed 30-record diagnostic sample produced initial primary-category agreement of 5/30 (16.7%) and 25 disagreements. Initial human judgments comprised 14 Core Meaning Preserved, zero Acceptable Variation, one Divergent Interpretations, four Potential Accuracy Issue and 11 Indeterminate. Of the six AI Acceptable Variation cases, three received human Core, two Indeterminate and one Potential Accuracy Issue. Different thresholds for recognizing a non-routine shift or accepting it as defensible are competing hypotheses; neither AI overannotation nor general human conservatism is established. The matrix preserves the original initial judgments and does not change with explorer filters.",
+            "BR015 is the one explicitly researcher-confirmed post-unblinding reconsideration: “What did you eat?” / “你吃了什么？” / “Mit ettetek?” The initial human notes recognized the target number contrast but requested context and selected D2 (Indeterminate). The later D3 (Divergent Interpretations) decision distinguishes recovering the historical speaker’s intended addressee number from identifying different, English-supported readings demonstrably selected by the targets. That reconsideration remains separate from the original 5/30 result. Related you-number cases retain their individual qualifications; acceptance of their discussion does not automatically revise their categories.",
+            "The reviewed analysis distinguishes meaning interpretation, evidential sufficiency and rule application. BR001 contrasts conventional proverbial function with a possible change in the stated bases of judgment; legitimate proverb substitution remains a competing explanation. In BR007, the AI concern about Chinese embedding still needs to establish an unsupported content change, while the brief human equivalence claim also requires justification. These are provisional interpretations, not confirmed new categories. The proposed disagreement mechanisms are researcher-reviewed, AI-assisted explanations, not independently coded frequencies or evidence of model-internal reasoning."
+          ],
+          "zh": [
+            "固定的 30 條診斷樣本中，初始主要類別一致為 5/30（16.7%），另有 25 條不一致。初始人工判斷包括 14 條核心意義保留、零條可接受變化、1 條解釋分歧、4 條準確性疑點及 11 條無法判定。六條原 AI「可接受變化」記錄中，人工判為核心意義保留的有三條、無法判定兩條、準確性疑點一條。對非例行變化的識別門檻，或對其可接受性的證據要求不同，都是待檢驗的競爭解釋；尚不能確立 AI 過度標註或人工整體較保守。矩陣保留原始初判，不隨語料探索器的篩選條件改變。",
+            "BR015 是唯一明確獲研究者確認的揭盲後類別復議：“What did you eat?”／“你吃了什么？”／“Mit ettetek?”。初始人工筆記已辨認目標句的人數差異，但要求語境，因而選擇 D2（無法判定）。其後改判 D3（解釋分歧），區分了恢復歷史說話者所指收話人數，與辨認兩個目標句實際選取、且獲英語支持的不同讀法。此復議與原有 5/30 結果分開保存。其他涉及 you 人數的案例仍保留各自限定；接受其討論不會自動改動類別。",
+            "已審閱的分析區分意義解讀、證據充分性及規則應用。BR001 涉及常規諺語功能與判斷依據可能改變之間的區別；合理的諺語替換仍是競爭解釋。BR007 中，AI 對中文嵌套結構的疑點仍須證明存在未獲支持的內容變化，而人工簡短的等值判斷也需要論證。這些是暫定解讀，不是已確認的新類別。所提出的分歧機制屬研究者審閱的 AI 輔助解釋，並非獨立編碼所得的頻率，亦非模型內部思考的證據。"
+          ]
+        },
+        "matrix": {
+          "categories": [
+            "Core Meaning Preserved",
+            "Acceptable Variation",
+            "Divergent Interpretations",
+            "Potential Accuracy Issue",
+            "Indeterminate"
+          ],
+          "counts": [
+            [
+              4,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              5
+            ],
+            [
+              4,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              3,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "caption": {
+            "en": "Original AI categories (rows) × initial human categories (columns): fixed diagnostic sample, n = 30.",
+            "zh": "原 AI 類別（行）× 初始人工類別（列）：固定診斷樣本，n = 30。"
+          },
+          "corner": {
+            "en": "Original AI / Initial human",
+            "zh": "原 AI／初始人工"
+          },
+          "total": {
+            "en": "Total",
+            "zh": "合計"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "conclusion",
@@ -238,11 +319,13 @@ export const learningSections = [
     "paragraphs": {
       "en": [
         "The project produced a reproducible 500-record trilingual sample, an approved five-category codebook, 50 preserved human reviews, and 450 explicitly AI-only annotations. It provides a way to examine ordinary correspondence, defensible variation, differences in selected readings, possible content problems, and unresolved interpretations through their supporting evidence.",
-        "Most sampled linked triples were assigned a correspondence-preserving interpretation under this scheme. This is a limited descriptive finding, not an independently established accuracy rate. Across the three operational questions, the evidence supports a practical distinction: routine linguistic realization should not automatically count as variation; different interpretations require actual target-selected readings; and traceable content concerns must be separated from unresolved contextual questions. The explorer makes these decisions inspectable across records and visualizations, rather than acting as an automatic correctness detector."
+        "Most sampled linked triples were assigned a correspondence-preserving interpretation under this scheme. This is a limited descriptive finding, not an independently established accuracy rate. Across the three operational questions, the evidence supports a practical distinction: routine linguistic realization should not automatically count as variation; different interpretations require actual target-selected readings; and traceable content concerns must be separated from unresolved contextual questions. The explorer makes these decisions inspectable across records and visualizations, rather than acting as an automatic correctness detector.",
+        "The supplementary comparison shows why transparent provenance and inspectable evidence matter alongside category definitions. BR015 demonstrates that recognizing selected readings and requiring recovery of historical intention are different evidential tasks. Other disagreements leave competing linguistic interpretations and thresholds unresolved. The comparison makes those distinctions examinable without establishing general superiority of either AI or human classification."
       ],
       "zh": [
         "本專題建立了可重現的 500 條三語樣本、獲批准的五分類代碼本、50 條完整保留的人工複核記錄，以及明確標示的 450 條 AI-only 標註，提供透過支持證據檢視正常對應、合理變化、所選讀法差異、可能的內容問題及未解解讀的方法。",
-        "在本分類方案下，大部分抽樣的連結三語組合獲判為保留對應關係。這是一項有限的描述性結果，並非經獨立確立的準確率。就三項操作問題而言，證據支持以下實際區分：例行的語言表達不應自動算作變化；不同解讀必須有譯文實際選取的讀法作依據；可追溯的內容疑點亦須與尚未解決的語境問題分開。探索平台讓這些決定可透過記錄與視覺化加以查閱，而非充當自動判定正誤的工具。"
+        "在本分類方案下，大部分抽樣的連結三語組合獲判為保留對應關係。這是一項有限的描述性結果，並非經獨立確立的準確率。就三項操作問題而言，證據支持以下實際區分：例行的語言表達不應自動算作變化；不同解讀必須有譯文實際選取的讀法作依據；可追溯的內容疑點亦須與尚未解決的語境問題分開。探索平台讓這些決定可透過記錄與視覺化加以查閱，而非充當自動判定正誤的工具。",
+        "補充比較顯示，除了類別定義，透明的判斷來源及可檢視的證據同樣重要。BR015 說明，辨認已選取的讀法與要求恢復歷史意圖，是不同的證據任務。其他分歧仍涉及未解決的競爭語言解讀及判定門檻。比較讓這些區別可供檢視，並未確立 AI 或人工分類普遍較優。"
       ]
     },
     "subsections": [
@@ -255,13 +338,15 @@ export const learningSections = [
         "paragraphs": {
           "en": [
             "This study has several limitations. First, the corpus contains 500 English-linked sentence triples from Tatoeba. These links do not establish the original translation direction or guarantee semantic equivalence. The findings therefore cannot be generalized to all multilingual translations. Many short entries also lack surrounding discourse, which can be essential for resolving pragmatic variation and ambiguous readings. The sampling unit was an eligible English pivot rather than every possible linked triple.",
-            "Second, 50 records were manually reviewed by a single researcher, while the remaining 450 received AI-only annotations. The AI-generated judgments have not undergone independent human validation. No second annotator was involved, so inter-annotator agreement was not measured.",
-            "Finally, the five-category classification involves interpretive linguistic judgments. The reported category distributions should not be treated as verified translation accuracy rates. Automated checks support data integrity and reproducibility, but they cannot independently establish the linguistic validity of individual annotations. The study also does not establish population-wide error rates or independently measured model accuracy."
+            "At the original annotation stage, 50 records were manually reviewed by a single researcher and 450 received AI-only annotations. The subsequent 30-record diagnostic review is a separate comparison, not a replacement of those provenance flags. No second independent annotator was involved, and the study has no independent external gold standard.",
+            "Finally, the five-category classification involves interpretive linguistic judgments. The reported category distributions should not be treated as verified translation accuracy rates. Automated checks support data integrity and reproducibility, but they cannot independently establish the linguistic validity of individual annotations. The study also does not establish population-wide error rates or independently measured model accuracy.",
+            "The diagnostic sample is balanced across existing AI categories and is not representative of all 450 records. Its 16.7% is initial category agreement, not AI accuracy. The researcher also developed the Codebook. Post-unblinding qualitative analysis involved ChatGPT assistance and researcher review; accepting its qualifications does not mean every proposed category revision was formally adjudicated. Only BR015 has an explicitly confirmed post-unblinding category reconsideration in this extension. No disagreement-mechanism frequency or population-wide accuracy estimate is established."
           ],
           "zh": [
             "本研究有若干限制。首先，語料包含 500 個來自 Tatoeba、以英語連結的三語句子組合。這些連結既不能確立原始翻譯方向，亦不保證語義等同。因此，結果不能推廣至所有多語翻譯。許多短句亦缺少周邊篇章，而這些語境對釐清語用變化及歧義讀法可能至關重要。抽樣單位是符合條件的英語樞軸，而非每個可能的連結三語組合。",
-            "其次，50 條記錄由單一研究者進行人工複核，其餘 450 條則接受 AI-only 標註。AI 生成的判斷尚未經獨立人工驗證。研究沒有第二位標註者參與，因此未測量標註者間一致性。",
-            "最後，五分類方案涉及詮釋性的語言判斷，所報告的類別分布不應視為已驗證的翻譯準確率。自動化檢查支持資料完整性及可重現性，卻不能獨立確立個別標註的語言學有效性。本研究亦未確立總體錯誤率或獨立測得的模型準確度。"
+            "在原始標註階段，50 條記錄由單一研究者人工複核，450 條接受僅 AI 標註。其後的 30 條診斷性複核是另行比較，不取代原有來源標誌。研究沒有第二位獨立標註者，亦沒有獨立外部金標準。",
+            "最後，五分類方案涉及詮釋性的語言判斷，所報告的類別分布不應視為已驗證的翻譯準確率。自動化檢查支持資料完整性及可重現性，卻不能獨立確立個別標註的語言學有效性。本研究亦未確立總體錯誤率或獨立測得的模型準確度。",
+            "診斷樣本按原有 AI 類別平衡抽取，不能代表全部 450 條記錄。16.7% 是初始類別一致比例，並非 AI 準確率。研究者同時是 Codebook 制定者。揭盲後質性分析有 ChatGPT 協助，並經研究者審閱；接受包含限定的分析，不代表每項建議類別修訂均已正式裁定。本擴展只有 BR015 的揭盲後類別復議獲明確確認，並未確立分歧機制的頻率或總體準確率估計。"
           ]
         }
       }
@@ -479,7 +564,8 @@ export const aiDeclaration = {
       "id": "tools",
       "title": "AI Tools and Their Roles",
       "paragraphs": [
-        "I used ChatGPT and OpenAI Codex throughout this project. ChatGPT assisted with linguistic discussions, drafting and revising parts of the Learning Report, and critical reviews of the methodology and website. Codex helped develop data extraction and validation scripts, draft the Codebook, process AI-assisted annotations, implement the interactive website, and integrate approved research content and its corresponding Traditional Chinese version. The saved annotation logs identify `gpt-6.1-sol` as the model selected through Codex CLI. Exact model revisions for all earlier AI-assisted interactions were not consistently recorded, so I do not infer them."
+        "I used ChatGPT and OpenAI Codex throughout this project. ChatGPT assisted with linguistic discussions, drafting and revising parts of the Learning Report, and critical reviews of the methodology and website. Codex helped develop data extraction and validation scripts, draft the Codebook, process AI-assisted annotations, implement the interactive website, and integrate approved research content and its corresponding Traditional Chinese version. The saved annotation logs identify `gpt-6.1-sol` as the model selected through Codex CLI. Exact model revisions for all earlier AI-assisted interactions were not consistently recorded, so I do not infer them.",
+        "After I completed the initial blind judgments, ChatGPT assisted with language editing and the post-unblinding qualitative analysis. I reviewed and accepted that analysis with its qualifications. Codex assisted with integrating the supplementary findings into the English and Traditional Chinese report. This assistance did not create or replace the initial human judgments."
       ]
     },
     {
@@ -487,7 +573,7 @@ export const aiDeclaration = {
       "title": "My Contributions and Verification",
       "paragraphs": [
         "I determined the research topics and reviewed the analytical framework before approving the five categories, D1–D5 decision rules, and annotation protocol. I personally checked 50 randomly selected records, including their sources and English–Chinese and English–Hungarian correspondences. I also reviewed the Pilot classifications and approved five final decisions, four of which changed the original primary category. The original judgments and subsequent revisions were preserved separately.",
-        "The remaining 450 records were annotated by AI and were not independently validated by a human annotator. Their results are therefore treated as exploratory findings rather than verified translation-quality judgments."
+        "The original annotation layer retains 450 AI-only records. A subsequent, separate diagnostic sample of 30 received my initial blind judgments and was compared with saved AI annotations after unblinding. This is not independent external validation of the 450 records. I accepted the later AI-assisted analysis with its unresolved questions; only BR015 received an explicitly confirmed post-unblinding category reconsideration in this extension. Original judgments, annotations and provenance flags remain unchanged."
       ]
     },
     {
@@ -514,7 +600,8 @@ export const aiDeclaration = {
       "id": "tools",
       "title": "AI 工具及其角色",
       "paragraphs": [
-        "我在整個專題中使用了 ChatGPT 及 OpenAI Codex。ChatGPT 協助進行語言學討論、草擬及修訂學習報告的部分內容，以及對研究方法和網站作批判性審閱。Codex 協助開發資料抽取與驗證腳本、草擬 Codebook、處理 AI 輔助標註、建置互動網站，以及整合已批准的研究內容及其對應的繁體中文版本。保存的標註日誌顯示，透過 Codex CLI 選用的模型為 `gpt-6.1-sol`。較早期各次 AI 輔助互動的確切模型修訂版本未有一致記錄，因此我不作推定。"
+        "我在整個專題中使用了 ChatGPT 及 OpenAI Codex。ChatGPT 協助進行語言學討論、草擬及修訂學習報告的部分內容，以及對研究方法和網站作批判性審閱。Codex 協助開發資料抽取與驗證腳本、草擬 Codebook、處理 AI 輔助標註、建置互動網站，以及整合已批准的研究內容及其對應的繁體中文版本。保存的標註日誌顯示，透過 Codex CLI 選用的模型為 `gpt-6.1-sol`。較早期各次 AI 輔助互動的確切模型修訂版本未有一致記錄，因此我不作推定。",
+        "在我完成初始盲審判斷後，ChatGPT 協助語言編輯及揭盲後質性分析。我審閱並接受了該分析及其限定。Codex 協助將補充結果整合至英文及繁體中文報告。這些協助並未產生或取代初始人工判斷。"
       ]
     },
     {
@@ -522,7 +609,7 @@ export const aiDeclaration = {
       "title": "我的貢獻與核驗",
       "paragraphs": [
         "我確定了研究題目，並在批准五個類別、D1–D5 判定規則及標註協議前審閱了分析框架。我親自核查了 50 條隨機抽選的記錄，包括其來源，以及英語—中文和英語—匈牙利語的對應關係。我亦複核了 Pilot 分類，並批准五項最終決定，其中四項更改了原有主要類別。原始判斷與其後修訂分開保存。",
-        "其餘 450 條記錄由 AI 標註，未經人工標註者獨立驗證。因此，這些結果被視為探索性發現，而非已核實的翻譯品質判斷。"
+        "原始標註層保留 450 條僅 AI 標註記錄。其後另抽取 30 條診斷樣本，由我先作初始盲審判斷，再於揭盲後對照保存的 AI 標註。這不是對全部 450 條的獨立外部驗證。我接受了後續 AI 輔助分析及其中未解決的問題；本擴展只有 BR015 的揭盲後類別復議獲明確確認。原始判斷、標註及來源標誌均保持不變。"
       ]
     },
     {

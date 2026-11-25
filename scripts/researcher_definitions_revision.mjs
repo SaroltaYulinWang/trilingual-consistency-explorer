@@ -22,12 +22,12 @@ export async function verifyDefinitionsRevision(root=process.cwd()){
   else if(name.endsWith('public_summary.md')){assert.equal(item.changes.length,5);for(const [i,c]of item.changes.entries()){const d=m.definitions[i];assert.ok(c.before.startsWith('| '+d.id+' | '));assert.equal(c.after,`| ${d.id} | ${d.en} | ${d.zh} |`);}}
   else {assert.equal(item.changes.length,1);assert.equal(item.changes[0].before,'');assert.match(item.changes[0].after,/^\n## Researcher-authored definitions — 24 November 2026/);}
  }
- return {...m,effectiveCurrentHashes:{'web/content.js':academicZh.currentHashes['web/content.js']}};
+ return {...m,effectiveCurrentHashes:{'web/content.js':academicZh.effectiveCurrentHashes['web/content.js']}};
 }
 // Earlier stage checks evaluate their original approved state only after the exact later delta passes.
 export async function predecessorBytes(name,bytes,root=process.cwd()){
  const m=await verifyDefinitionsRevision(root);const entry=m.files[name];if(!entry)return bytes;
- let s=bytes.toString();if(name==='web/content.js'){const zh=await verifyAcademicZhRevision(root);assert.equal(sha(s),zh.currentHashes[name]);s=restoreAiV1(zh.predecessors[name],await verifyAiDeclarationRevision(root));}assert.equal(sha(s),entry.current_sha256,name);for(const c of [...entry.changes].reverse())s=s.replace(c.after,c.before);assert.equal(sha(s),entry.previous_sha256);return Buffer.from(s);
+ let s=bytes.toString();if(name==='web/content.js'){const zh=await verifyAcademicZhRevision(root);assert.equal(sha(s),zh.effectiveCurrentHashes[name]);s=restoreAiV1(zh.predecessors[name],await verifyAiDeclarationRevision(root));}assert.equal(sha(s),entry.current_sha256,name);for(const c of [...entry.changes].reverse())s=s.replace(c.after,c.before);assert.equal(sha(s),entry.previous_sha256);return Buffer.from(s);
 }
 export async function predecessorCategories(categories,root=process.cwd()){
  const m=await verifyDefinitionsRevision(root),copy=structuredClone(categories);

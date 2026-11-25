@@ -1,6 +1,7 @@
 /** Exact, reversible Task16A UI-only revision; preserves original approval/freeze hashes. */
 import fs from'node:fs/promises';import path from'node:path';import{pathToFileURL}from'node:url';import crypto from'node:crypto';import assert from'node:assert/strict';
 import {verifyAcademicZhRevision} from './academic_zh_revision.mjs';
+import {verifyFinalResearchIntegration} from './final_research_integration.mjs';
 const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 export async function verifyUxCopyRevision(root=process.cwd()){
  const m=JSON.parse(await fs.readFile(path.join(root,'config/ux_copy_revision_2026-11-24.json'),'utf8'));
@@ -15,7 +16,8 @@ export async function verifyUxCopyRevision(root=process.cwd()){
   assert.equal(block.split(c.after).length-1,1,c.language+'/'+c.key);app=app.slice(0,start)+block.replace(c.after,c.before)+app.slice(end);
  }
  assert.equal(sha(app),m.previous_app_sha256,'All bytes outside approved keyed UX strings unchanged');
- const c=await import(pathToFileURL(path.join(root,'web/content.js')).href);
+ const integration=await verifyFinalResearchIntegration(root);
+ const c=await import('data:text/javascript;base64,'+Buffer.from(integration.predecessors['web/content.js']).toString('base64'));
  const enCopy=app.split(' en: {')[1].split('\n zh: {')[0],labels=Object.fromEntries([...enCopy.matchAll(/(\w+):'((?:\\.|[^'])*)'/g)].map(x=>[x[1],x[2].replaceAll("\\'","'")]));
  const englishOnly=v=>Array.isArray(v)?v.map(englishOnly):v&&typeof v==='object'?(Object.hasOwn(v,'en')&&Object.hasOwn(v,'zh')?englishOnly(v.en):Object.fromEntries(Object.entries(v).map(([k,x])=>[k,englishOnly(x)]))):v;
  const academic={learning_report:c.learningSections.map(s=>({id:s.id,title:s.title.en,paragraphs:s.paragraphs.en,subsections:(s.subsections||[]).map(x=>({id:x.id,title:x.title.en,paragraphs:x.paragraphs.en}))})),codebook:c.categories.map(x=>({id:x.id,label:x.label.en,definition:x.definition.en,theory:x.theory.en,rule:x.rule.en,positive:{id:x.positive.id,explanation:x.positive.explanation.en},negative:{id:x.negative.id,explanation:x.negative.explanation.en},boundary:{id:x.boundary.id,explanation:x.boundary.explanation.en}})),decision_sequence:[1,2,3,4,5].map(i=>({id:'D'+i,text:labels['d'+i]})),references:englishOnly(c.references),ai_use_declaration_v2:c.aiDeclaration.en,method_notes:c.methodNotes.en};
