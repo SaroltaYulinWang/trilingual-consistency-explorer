@@ -1,5 +1,6 @@
 import {verifyUxCopyRevision} from './verify_ux_copy_revision.mjs';
 import {verifyDefinitionsRevision} from './researcher_definitions_revision.mjs';
+import {verifyContentNoticeRevision} from './content_notice_revision.mjs';
 /** Public checks bind approved research bytes; no private approval evidence is read. */
 import {fileURLToPath} from 'node:url';import fs from 'node:fs/promises';import crypto from 'node:crypto';import assert from 'node:assert/strict';import path from 'node:path';
 export const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
@@ -9,7 +10,8 @@ export async function verifyApprovedPublicInputs(root=process.cwd()){
  assert.deepEqual(m.record_counts,{total:500,human_reviewed:50,ai_only:450});
  await verifyUxCopyRevision(root);
  const revision=await verifyDefinitionsRevision(root);
- for(const [name,h] of Object.entries(m.approved_research_sha256))assert.equal(sha(await fs.readFile(path.join(root,name))),revision.effectiveCurrentHashes?.[name]||revision.files[name]?.current_sha256||h,name);
+ const display=await verifyContentNoticeRevision(root);
+ for(const [name,h] of Object.entries(m.approved_research_sha256))assert.equal(sha(await fs.readFile(path.join(root,name))),display.currentHashes[name]||revision.effectiveCurrentHashes?.[name]||revision.files[name]?.current_sha256||h,name);
  return m;
 }
 export async function verifyPublicSourceLock(root=process.cwd()){

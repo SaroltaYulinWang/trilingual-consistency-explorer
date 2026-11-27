@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "revision_id": "researcher-approved-publication-notices-2026-11-27",
+  "purpose": "Publication/display guidance only; not semantic annotation, translation error or a judgment of harmful intent. No automatic lexical inference.",
+  "types": {
+    "sexual_health": {
+      "en": "Sexual health",
+      "zh": "性健康相關內容"
+    },
+    "sexual_reference": {
+      "en": "Sexual reference",
+      "zh": "性相關表達"
+    },
+    "blunt_language": {
+      "en": "Blunt language",
+      "zh": "較粗率的言語"
+    },
+    "religion_and_war": {
+      "en": "Religion and war",
+      "zh": "宗教與戰爭相關內容"
+    }
+  },
+  "records": {
+    "TCE-0206": [
+      "sexual_health"
+    ],
+    "TCE-0257": [
+      "sexual_reference"
+    ],
+    "TCE-0106": [
+      "blunt_language"
+    ],
+    "TCE-0455": [
+      "religion_and_war"
+    ]
+  }
+}

@@ -1,7 +1,9 @@
 /** Reversible final report/disclosure integration; prior approvals are retained. */
 import fs from 'node:fs/promises';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';
+import {verifyContentNoticeRevision} from './content_notice_revision.mjs';
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 export async function verifyFinalResearchIntegration(root=process.cwd()) {
+ const display=await verifyContentNoticeRevision(root);
  const revision=JSON.parse(await fs.readFile(path.join(root,'config/final_research_integration_2026-11-25.json'),'utf8'));
  const amendment=JSON.parse(await fs.readFile(path.join(root,'config/editorial_amendment_2026-11-25.json'),'utf8'));
  assert.equal(amendment.revision_id,'approved-editorial-amendment-2026-11-25');
@@ -14,7 +16,7 @@ export async function verifyFinalResearchIntegration(root=process.cwd()) {
  assert.deepEqual(revision.protected_facts.matrix,[[4,0,0,1,1],[3,0,0,1,2],[0,0,0,1,5],[4,0,0,0,2],[3,0,1,1,1]]);
  const predecessors={},currentHashes={};
  for(const [name,entry]of Object.entries(revision.files)) {
-  let text=await fs.readFile(path.join(root,name),'utf8');const currentHash=sha(text);
+  let text=display.predecessors[name]??await fs.readFile(path.join(root,name),'utf8');const currentHash=display.currentHashes[name]??sha(text);
   if(name===amendment.file) {
    assert.equal(currentHash,amendment.current_sha256,name+' authorized editorial amendment');
    for(const c of [...amendment.changes].reverse()) {

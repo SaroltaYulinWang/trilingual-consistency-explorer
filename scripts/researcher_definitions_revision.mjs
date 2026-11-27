@@ -1,6 +1,7 @@
 /** Additive, reversible researcher-authorized definition revision. Original approval hashes stay intact. */
 import fs from 'node:fs/promises';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';
 import {verifyAcademicZhRevision} from './academic_zh_revision.mjs';
+import {verifyContentNoticeRevision} from './content_notice_revision.mjs';
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 export async function verifyDefinitionsRevision(root=process.cwd()){
  const academicZh=await verifyAcademicZhRevision(root);
@@ -26,6 +27,8 @@ export async function verifyDefinitionsRevision(root=process.cwd()){
 }
 // Earlier stage checks evaluate their original approved state only after the exact later delta passes.
 export async function predecessorBytes(name,bytes,root=process.cwd()){
+ const display=await verifyContentNoticeRevision(root);if(display.predecessors[name]&&name!=='web/app.js')bytes=Buffer.from(display.predecessors[name]);
+ if(name===display.revision.local_test_revision.file){const t=display.revision.local_test_revision;let text=bytes.toString();assert.equal(sha(text),t.current_sha256);for(const c of [...t.changes].reverse()){assert.equal(text.split(c.after).length-1,1);text=text.replace(c.after,c.before);}assert.equal(sha(text),t.previous_sha256);bytes=Buffer.from(text);}
  const m=await verifyDefinitionsRevision(root);const entry=m.files[name];if(!entry)return bytes;
  let s=bytes.toString();if(name==='web/content.js'){const zh=await verifyAcademicZhRevision(root);assert.equal(sha(s),zh.effectiveCurrentHashes[name]);s=restoreAiV1(zh.predecessors[name],await verifyAiDeclarationRevision(root));}assert.equal(sha(s),entry.current_sha256,name);for(const c of [...entry.changes].reverse())s=s.replace(c.after,c.before);assert.equal(sha(s),entry.previous_sha256);return Buffer.from(s);
 }

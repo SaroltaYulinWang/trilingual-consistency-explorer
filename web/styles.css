@@ -135,3 +135,10 @@ html{scroll-padding-top:max(110px,calc(var(--site-header-height,85px) + var(--an
  .filter-grid,.heat-controls,.report-toc nav{grid-template-columns:repeat(auto-fit,minmax(min(100%,7rem),1fr))}
  .analysis-jump{grid-template-columns:repeat(auto-fit,minmax(min(100%,4rem),1fr))}
 }
+
+/* Approved publication notices: visible text using existing restrained tokens. */
+.record-meta{flex-wrap:wrap}
+.record-content-notices{display:block;max-width:100%;line-height:1.5}
+.content-notice{display:inline-block;max-width:100%;padding:2px 6px;border:1px solid var(--line);border-radius:4px;background:var(--wash);color:var(--ink);font-size:.75rem;line-height:1.5;overflow-wrap:anywhere}
+.concordance-hit .record-content-notices{margin-top:5px}
+.download-guidance{max-width:75ch;margin-top:10px}

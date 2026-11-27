@@ -80,15 +80,9 @@ PHENOMENON_GROUPS = [
     {'id':'documentation','label':{'en':'Documentation & unspecified notes','zh':'記錄狀態與未詳述事項'},'definition':{'en':'Absent tags, unspecified observations or evidence/expertise limitations; not a linguistic-error category.','zh':'標籤缺漏、未詳述觀察或證據／專業限制，並非語言錯誤類別。'}},
 ]
 
-# Curated, nonexhaustive lexical notices; not a semantic annotation or a content filter.
-CONTENT_NOTICE_RULES = (
-    ('en', 'sexual_reference', re.compile(r'\bsex\b', re.IGNORECASE)),
-    ('en', 'profanity', re.compile(r'\b(?:fuck\w*|shit\w*|damn\w*)\b', re.IGNORECASE)),
-    ('zh', 'sexual_reference', re.compile('性交')),
-    ('zh', 'profanity', re.compile('操你|他妈|他媽')),
-    ('hu', 'sexual_reference', re.compile(r'\bszex\w*\b', re.IGNORECASE)),
-    ('hu', 'profanity', re.compile(r'\bbasz\w*\b', re.IGNORECASE)),
-)
+# Explicit researcher-approved publication guidance, separate from research annotations.
+CONTENT_NOTICE_POLICY = json.loads((ROOT / 'config/content_notice_policy_2026-11-27.json').read_text())
+assert set(CONTENT_NOTICE_POLICY['records']) == {'TCE-0206', 'TCE-0257', 'TCE-0106', 'TCE-0455'}
 
 
 def sha256(path):
@@ -184,9 +178,8 @@ def transform(row):
     record['uncertainty'] = ai['annotation']['material_uncertainty'] if ai else row['human_triple_rationale']
     record['proposedRecovery'] = row['proposed_recovery']
     record['originalHumanNotes'] = row['human_original_notes']
-    record['contentNotice'] = [{'type': kind, 'language': lang, 'trigger': match.group(0)}
-                               for lang, kind, pattern in CONTENT_NOTICE_RULES
-                               for match in pattern.finditer(record[lang])]
+    record['contentNotice'] = [{'type': kind, 'label': CONTENT_NOTICE_POLICY['types'][kind]}
+                               for kind in CONTENT_NOTICE_POLICY['records'].get(record['id'], [])]
     if ai:
         annotation = ai['annotation']
         record['interpretation'] = {key: annotation[key] for key in
@@ -232,7 +225,7 @@ def build():
                 'pairwiseVocabularies': {'legacy-pilot': LEGACY_PAIR_LABELS,
                                         'v0.2': sorted(MODERN_PAIR_LABELS)},
                 'tagAliases': TAG_ALIASES,
-                'contentNoticeConvention': 'Curated nonexhaustive lexical triggers only; notices are not semantic issue tags, annotations, or a complete sensitive-content screen. Records are not hidden by default.',
+                'contentNoticeConvention': 'Researcher-approved record-level publication guidance only; not semantic categories, translation errors, judgments of harmful intent or exhaustive sensitivity screening. Original texts and CSV remain unchanged; no default exclusion.',
                 'downloadCsv': 'data/trilingual_500_annotated.csv'}
     DESTINATION.mkdir(parents=True, exist_ok=True)
     (DESTINATION / 'corpus.json').write_text(json.dumps({'records': records, 'meta': metadata},
